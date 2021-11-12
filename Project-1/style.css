@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* background-color: rgb(214, 210, 210); */
+    width: 90%;
+    height: 80px;
+    margin-left: 5%;
+    /* color: white; */
+}
+
+.logo {
+    /* background-color: blueviolet; */
+    width: 15%;
+    height: 100px;
+    overflow: hidden;
+    display: inline-block;
+    line-height: 120px;
+    margin-left: 2%;
+}
+
+nav {
+    /* background-color: violet; */
+    display: inline-block;
+    font-size: 0;
+    vertical-align: top;
+    width: 34%;
+    margin-left: 48.5%;
+}
+
+.logo-img {
+    width: 100%;
+}
+
+.nav-bar {
+    /* background-color: red; */
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav-bar-list {
+    font-size: 16px;
+    display: inline-block;
+    /* background-color: yellow; */
+    line-height: 80px;
+    padding: 0 12px;
+    text-align: center;
+}
+
+
+.news-line {
+    width: 100%;
+    height: 40px;
+    background-color: turquoise;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 40px;
+  
+}
+
+
+/* Baaner */
+
+.banner {
+    /* background-color: tomato; */
+    height: 500px;
+    width: 100%;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.banner-gallery {
+    width: 100%;
+    margin-top: -100px;
+}
+
+
+/* Programing Cards */
+
+.programes {
+    width: 90%;
+    /* background-color: tomato; */
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: inline-block;
+    /* background-color: thistle; */
+    width: 23%;
+    margin-left: 16px;
+    border: 1px solid black;
+}
+
+.cards-img {
+    /* background-color: red; */
+    height: 150px;
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+
+.sub-img {
+    width: 100%;
+}
+
+.card-heading {
+    border-top: 1px solid black;
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-desc {
+    font-size: 16px;
+    font-family: cursive;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.card-btn {
+    padding: 10px 40px;
+    background-color: turquoise;
+    border-radius: 10px;
+    margin-left: 50px;
+    border: 1px groove;
+}
+
+
+/* about us  */
+
+.about-us-container {
+    background-color: rgb(222, 238, 202);
+    height: 400px;
+    margin-top: 25px;
+    /* display: inline-block; */
+    font-size: 0px;
+}
+
+.about-us {
+    width: 90%;
+    height: 350px;
+    /* background-color: darkgreen; */
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 25px;
+}
+
+.about-image {
+    width: 50%;
+    /* background-color: darkmagenta; */
+    height: 355px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.about-text {
+    width: 50%;
+    /* background-color: darkmagenta; */
+    height: 350px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about-image-img {
+    width: 100%;
+}
+
+.about-title-header {
+    font-size: 20px;
+    font-family: fantasy;
+    font-weight: 200;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.about-title-text {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.highlighted-text {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+/* Offer */
+
+.offer-section {
+    padding: 10px;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+.offer-section-title{
+    font-size: 50px;
+    padding: 10px 0;
+    font-weight: 200;
+    font-family: cursive;
+}
+
+
+
+/* Photo Gallary */
+
+
+
+.photo-gal{
+    /* background-color: brown; */
+    width: 90%;
+    margin-left: 5%;
+    display: inline-block;
+    font-size: 0px;
+    
+    
+}
+.photo-gal-cards{
+    width: 20%;
+    height: 300px;
+    /* background-color: coral; */
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+   
+    
+}
+
+.photo-gal-img{
+    width: 90%;
+}
+
+
+/* Footer section */
+
+.footer {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(90, 0, 0);
+    color: white;
+}
