@@ -51,8 +51,8 @@
     /* Banner Section */
 
     .banner {
-        height: 45vh;
-        background-position: -200px 0px;
+        height: 400px;
+        background-position: 0px 0px;
     }
 
     .banner_title {
@@ -259,35 +259,35 @@
 
     @keyframes slider {
         12.5% {
-            margin-top: -40vh;
+            margin-top: -500px;
         }
 
         25% {
-            margin-top: -40vh;
+            margin-top: -500px;
         }
 
         32.5% {
-            margin-top: -80vh;
+            margin-top: -1000px;
         }
 
         50% {
-            margin-top: -80vh;
+            margin-top: -1000px;
         }
 
         62.5% {
-            margin-top: -120vh;
+            margin-top: -1500px;
         }
 
         75% {
-            margin-top: -120vh;
+            margin-top: -1500px;
         }
 
         82.5% {
-            margin-top: -160vh;
+            margin-top: -2000px;
         }
 
         100% {
-            margin-top: -160vh;
+            margin-top: -2000px;
         }
 
     }
