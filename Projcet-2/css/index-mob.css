@@ -55,10 +55,11 @@
         background-position: 0px 0px;
     }
 
-    .banner_title {
-        font-size: 18px;
-        width: 50px;
+ .banner_title {
+        font-size: 35px;
+        width: 250px;
     }
+
 
     .banner_btn {
         margin-top: 10px;
