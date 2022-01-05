@@ -220,7 +220,7 @@
 
     .gal-imges {
         /* width: 30%; */
-        height: 450px;
+        height: 600px;
     }
 
     .gal-details {
@@ -234,18 +234,18 @@
 
     .gal-details p {
         overflow: hidden;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .gal-title {
-        font-size: 20px;
+        font-size: 12px;
         padding-bottom: 10px;
         text-transform: uppercase;
     }
 
     .gal-btn {
-        width: 200px;
-        font-size: 18px;
+        width: 300px;
+        font-size: 30px;
     }
     .extra-gal{
         display: flex;
