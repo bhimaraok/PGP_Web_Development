@@ -1,0 +1,86 @@
+@media (min-width:1440px) {
+    .header_container {
+        padding: 20px;
+    }
+
+    .header {
+        height: 100px;
+        background-color: white;
+    }
+
+    .logo {
+        width: 20%;
+        font-size: 40px;
+        color: orangered;
+    }
+
+    .navigation {
+        width: 80%;
+    }
+
+    .nav-links {
+        font-size: 25px;
+        color: orangered;
+
+    }
+
+    .banner {
+        height: 750px;
+        background-position: 0 -100px;
+    }
+    .banner_details{
+        margin-top: 50px;
+    }
+
+    .banner_title {
+        font-size: 60px;
+    }
+
+    .banner-btn {
+        font-size: 30px;
+        padding: 10px;
+        color: white;
+    }
+
+
+    .gal-products {
+        /* background-color: purple; */
+        height: 700px;
+    }
+
+    .gallery {
+        width: 100%;
+        height: 700px;
+    }
+
+    .gal-details {
+        width: 70%;
+        height: 700px;
+
+
+    }
+    .gal-title {
+        font-size: 60px;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .gal-details>p {
+        font-size: 30px;
+    }
+
+    .gal-imges {
+        height: 650px;
+    }
+
+   
+
+    .gal-btn{
+        padding: 15px;
+        font-size: 35px;
+        width: 500px;
+    }
+
+
+
+}
