@@ -268,7 +268,7 @@
         animation-duration: 5s;
         animation-duration: 20s;
         animation-iteration-count: infinite;
-        animation-play-state: paused;
+        animation-play-state: running;
     }
 
     @keyframes slider {
