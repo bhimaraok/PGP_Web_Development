@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
+/* font-family: 'Orelega One', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+/* font-family: 'Secular One', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  /* background-color: rgb(255, 0, 0); */
+}
+
+/* CSS for Header and Navigation Section Start */
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #e6e4d7;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+}
+
+.logo {
+  width: 30%;
+  height: 80px;
+  font-family: "Orelega One", cursive;
+  /* background-color: hotpink; */
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #855000;
+}
+
+.navigation {
+  width: 60%;
+  height: 80px;
+  /* background-color: indigo; */
+}
+
+.nav {
+  width: 100%;
+}
+
+.navlinks {
+  width: 25%;
+  height: 80px;
+  font-size: 1.2rem;
+  list-style-type: none;
+  text-align: center;
+  line-height: 80px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition: 500ms;
+}
+
+.navlinks > a {
+  text-decoration: none;
+  color: #b10000;
+}
+
+.navlinks:hover {
+  background-color: #bdb897;
+}
+
+.new-style {
+  list-style-type: none;
+  width: 100%;
+  background-color: #e6e4d7;
+  height: 0px;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.new-style-links {
+  height: 50px;
+  line-height: 50px;
+  color: #b10000;
+}
+
+.sub-style-link:hover > .new-style {
+  height: 250px;
+}
+
+.new-style-links:hover {
+  background-color: #bdb897;
+}
+
+/* CSS for Header and Navigation Section End */
+
+/* CSS for Banner Section Start */
+
+.banner_container {
+  width: 100%;
+  height: 90vh;
+  margin-top: 80px;
+  background-image: url("../media/images/home-banner.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-details-container {
+  /* background-color: blueviolet; */
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  top: 40%;
+  left: 10%;
+}
+
+.banner-details-container > p {
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.banner-details-container > h2 {
+  font-size: 5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+/* CSS for Banner Section Ends */
+
+/* CSS for Product Section Start */
+
+.product_container {
+  height: auto;
+  background-color: white;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+.products {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-1 {
+  width: 100%;
+  height: 600px;
+  justify-content: space-between;
+  /* background-color: blueviolet; */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.img-container {
+  width: 70%;
+  height: 500px;
+  overflow: hidden;
+  /* background-color: aqua; */
+  margin: 3%;
+}
+
+.product-img {
+  width: 100%;
+}
+
+.product-details {
+  width: 100%;
+  /* background-color: azure; */
+  height: auto;
+}
+.product-dec {
+  font-size: 1.5rem;
+  overflow: hidden;
+  height: 200px;
+  /* background-color: red; */
+}
+
+.product-details > h3 {
+  font-size: 3rem;
+}
+
+.product-2 {
+  flex-direction: row-reverse;
+  background-color: teal;
+  height: 600px;
+}
+
+.product-2 > .img-container {
+  /* background-color: #b10000; */
+  height: 500px;
+}
+
+.product-2 > .product-details {
+  font-size: 1.8rem;
+  font-family: "Secular One", sans-serif;
+  text-align: justify;
+  margin-left: 20px;
+}
+
+.product-2 .product-title {
+  text-align: right;
+}
+
+.product-2 .product-img {
+  height: 150%;
+  width: auto;
+}
+
+/* Product - 3 */
+.product-3 {
+  background-color: teal;
+  height: 600px;
+}
+
+.product-3 .img-container {
+  height: 500px;
+}
+
+.product-3 > .product-details {
+  font-size: 1.8rem;
+  font-family: "Secular One", sans-serif;
+  text-align: justify;
+  margin-right: 20px;
+}
+
+/* Product - 4 */
+.product-4 {
+  flex-direction: row-reverse;
+  height: 600px;
+}
+
+.product-4 > .product-details {
+  font-size: 1.8rem;
+  font-family: "Secular One", sans-serif;
+  text-align: justify;
+  margin-left: 20px;
+}
+
+.product-4 .product-title {
+  text-align: right;
+}
+
+/* Additional Data Start*/
+.add-data {
+  height: 300px;
+  display: flex;
+  align-items: stretch;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* background-color: #e6e4d7; */
+}
+
+.add-container {
+  text-align: center;
+  align-self: flex-end;
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+/* Additional Data End*/
+
+/* Galery Section Start */
+.slider {
+  width: 100%;
+  /* background-color: green; */
+  height: 70vh;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes gal-slider-1 {
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes gal-slider-2 {
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes gal-slider-3 {
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes gal-slider-4 {
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.galery_container {
+  height: 70vhpx;
+  width: 90%;
+  background-color: teal;
+  padding: 1%;
+  position: absolute;
+
+  animation-delay: 1s;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.gal-img-container {
+  width: 90%;
+  height: 65vh;
+  overflow: hidden;
+  margin: 2%;
+}
+
+.gal-img {
+  /* height: 350px; */
+  width: 100%;
+}
+
+.galery_1 {
+  /* background-color: grey; */
+  width: 90%;
+  height: 65vh;
+  animation-name: gal-slider-4;
+}
+
+.gal-details {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1%;
+}
+
+.gal-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-family: "Orelega One", cursive;
+  letter-spacing: 2px;
+}
+
+.gal-des {
+  font-size: 1.5rem;
+}
+
+/* Galery-2 */
+.galery_2 {
+  height: 65vh;
+  flex-direction: row-reverse;
+  background-color: #ded8c8;
+  animation-name: gal-slider-3;
+}
+
+.galery_2 .gal-title {
+  text-align: right;
+}
+
+.galery_2 .gal-des {
+  text-align: right;
+}
+
+/* Galery-3 */
+
+.galery_3 {
+  height: 65vh;
+  background-color: teal;
+  animation-name: gal-slider-2;
+}
+
+/* Galery-4 */
+.galery_4 {
+  height: 65vh;
+  flex-direction: row-reverse;
+  background-color: #ded8c8;
+  animation-name: gal-slider-1;
+}
+
+.galery_4 .gal-title {
+  text-align: right;
+}
+
+.galery_4 .gal-des {
+  text-align: right;
+}
+
+/* ***************************** */
+
+/* Galery Section End */
+
+/* Support by */
+
+.support-title {
+  background-color: #b7a114;
+  width: 100%;
+  text-align: center;
+  font-family: "Secular One", sans-serif;
+  margin-bottom: 20px;
+  height: 80px;
+  line-height: 80px;
+  color: white;
+}
+
+.supporters {
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2%;
+  height: auto;
+}
+
+.support-img {
+  width: 10%;
+  margin-left: 3%;
+}
+
+/* copyright */
+
+.copyright {
+  height: 50px;
+  background-color: gray;
+  margin-top: 2%;
+}
+
+.copyright > p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
