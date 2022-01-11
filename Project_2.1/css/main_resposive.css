@@ -425,7 +425,7 @@
   /* Product-2 */
   .product-2 {
     display: inline-block;
-    height: 500px;
+    height: auto;
   }
 
   .product-2 .img-container {
@@ -457,7 +457,8 @@
   .product-3 {
     display: inline-block;
     background-color: white;
-    height: 500px;
+    height: auto;
+    margin-bottom: 10px;
   }
 
   .product-3 .img-container {
