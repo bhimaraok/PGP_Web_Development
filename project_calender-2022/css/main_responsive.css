@@ -26,6 +26,9 @@
         animation-iteration-count: infinite;
         animation-play-state: running;
     }
+       .slider:hover {
+        animation-play-state: running;
+    }
 
 
     @keyframes slider {
