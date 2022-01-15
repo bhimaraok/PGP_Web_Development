@@ -1,235 +1,90 @@
 @media (min-width: 0px) and (max-width: 575.98px) {
-    .mainContainer {
+  .mainContainer {
+    width: 100%;
+    height: 100vh;
+    padding-top: 0;
+  }
 
-        width: 100%;
-        height: 100vh;
-        padding-top: 0;
-    }
+  .container {
+    flex-direction: column;
+    overflow: visible;
+    overflow: hidden;
+    height: 590px;
+  }
 
+  .month {
+    height: 580px;
+    background-color: yellow;
+    display: block;
+  }
 
-    .container {
-        flex-direction: column;
-        overflow: visible;
-        overflow: hidden;
-        height: 600px;
-    }
+  .banner {
+    width: 100%;
+    height: 280px;
+    overflow: visible;
+  }
 
-    .slider {
-        width: 100%;
-        height: auto;
-        background-color: red;
-        overflow: hidden;
+  .apr .banner {
+    background-size: cover;
+  }
 
-        animation: slider;
-        animation-delay: 5s;
-        animation-duration: 30s;
-        animation-iteration-count: infinite;
-        animation-play-state: running;
-    }
-       .slider:hover {
-        animation-play-state: running;
-    }
+  .may .banner {
+    background-size: cover;
+  }
+  .jun .banner {
+    background-size: cover;
+  }
+  .jul .banner {
+    background-size: 170%;
+  }
+  .aug .banner {
+    background-size: 150%;
+  }
 
+  .sep .banner {
+    background-size: 150%;
+  }
 
-    @keyframes slider {
-        8.33% {
-            margin-top: -600px;
-        }
+  .oct .banner {
+    background-size: cover;
+  }
 
-        8.33% {
-            margin-top: -600px;
-        }
+  .nov .banner {
+    background-size: 100%;
+    background-position: top;
+  }
 
-        16.67% {
-            margin-top: -1200px;
-        }
+  .dec .banner {
+    background-size: cover;
+  }
 
-        16.67% {
-            margin-top: -1200px;
-        }
+  .details {
+    width: 100%;
+    height: 300px;
+    align-items: center;
+  }
 
-        25% {
-            margin-top: -1800px;
-        }
+  .details p {
+    line-height: 30px;
+    font-size: 1.2rem;
+    /* height: 30px; */
+  }
 
-        25% {
-            margin-top: -1800px;
-        }
+  .details-title {
+    background-color: transparent;
+    font-size: 2.5rem;
+    padding-top: 0px;
+    color: black;
+    text-shadow: -5px -0px 5px rgb(255, 255, 255),
+      0 5px 5px rgba(12, 12, 255, 0.527);
+  }
 
-        33.33% {
-            margin-top: -2400px;
-        }
+  .weeks {
+    font-size: 1rem;
+    font-weight: bold;
+  }
 
-        33.33% {
-            margin-top: -2400px;
-        }
-
-        41.66% {
-            margin-top: -3000px;
-        }
-
-        41.66% {
-            margin-top: -3000px;
-        }
-
-        50% {
-            margin-top: -3600px;
-        }
-
-        50% {
-            margin-top: -3600px;
-        }
-
-        58.33% {
-            margin-top: -4200px;
-        }
-
-        58.33% {
-            margin-top: -4200px;
-        }
-
-        66.66% {
-            margin-top: -4800px;
-        }
-
-        66.66% {
-            margin-top: -4800px;
-        }
-
-        75% {
-            margin-top: -5400px;
-        }
-
-        75% {
-            margin-top: -5400px;
-        }
-
-        83.33% {
-            margin-top: -6000px;
-        }
-
-        83.33% {
-            margin-top: -6000px;
-        }
-
-        91.65% {
-            margin-top: -6600px;
-        }
-
-        91.65% {
-            margin-top: -6600px;
-        }
-
-        100% {
-            margin-top: -7200px;
-        }
-
-        100% {
-            margin-top: -7200px;
-        }
-
-
-    }
-
-    .month {
-        width: 100%;
-        height: 600px;
-        background-color: yellow;
-        display: block;
-        /* flex-direction: column; */
-        /* flex-wrap: wrap; */
-        /* overflow: hidden; */
-    }
-
-    .banner {
-        width: 100%;
-        height: 300px;
-        overflow: visible;
-
-
-    }
-
-    .apr .banner {
-        background-size: cover;
-    }
-
-    .may .banner {
-        background-size: cover;
-       
-    }
-    .jun .banner {
-        background-size: cover;
-    }
-    .jul .banner {
-        background-size: 170%;
-    }
-    .aug .banner {
-        background-size: 150%;
-    }
-    
-    .sep .banner {
-         background-size: 150%;
-    }
-    
-    .oct .banner {
-        background-size: cover;
-    }
-    
-    .nov .banner {
-        background-size: 100%;
-        background-position: top;
-    }
-    
-    .dec .banner {
-        background-size:cover;
-    }
-
-    .details {
-        width: 100%;
-        height: 300px;
-        /* overflow: visible; */
-        /* display: none; */
-        align-items: center;
-    }
-
-    .details p {
-
-        line-height: 30px;
-        font-size: 1.2rem;
-        /* height: 30px; */
-
-    }
-
-    .details-title {
-        /* width: 100%; */
-        /* height: 50px; */
-        /* grid-column: 1/-1; */
-        /* font-family: 'Lobster', cursive; */
-        background-color: transparent;
-        font-size: 2.5rem;
-        padding-top: 0px;
-        color: black;
-        text-shadow: -5px -0px 5px rgb(255, 255, 255), 0 5px 5px rgba(12, 12, 255, 0.527);
-
-
-    }
-
-    .weeks {
-        /* background-color: #7c678f; */
-        font-size: 1.0rem;
-        font-weight: bold;
-    }
-
-    .sunday {
-        background-color: transparent;
-    }
-
+  .sunday {
+    background-color: transparent;
+  }
 }
-
-@media (min-width: 576px) and (max-width: 767.98px) {}
-
-@media (min-width: 768px) and (max-width: 991.98px) {}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {}
-
-@media (min-width: 1200px) and (max-width: 1399.98px) {}
