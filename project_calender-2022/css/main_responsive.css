@@ -1,0 +1,230 @@
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .mainContainer {
+
+        width: 100%;
+        height: 100vh;
+    }
+
+
+    .container {
+        flex-direction: column;
+        overflow: visible;
+        overflow: hidden;
+        height: 700px;
+    }
+
+    .slider {
+        width: 100%;
+        height: auto;
+        background-color: red;
+        overflow: hidden;
+
+        animation: slider;
+        animation-delay: 5s;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+    }
+
+
+    @keyframes slider {
+        8.33% {
+            margin-top: -700px;
+        }
+
+        8.33% {
+            margin-top: -700px;
+        }
+
+        16.67% {
+            margin-top: -1400px;
+        }
+
+        16.67% {
+            margin-top: -1400px;
+        }
+
+        25% {
+            margin-top: -2100px;
+        }
+
+        25% {
+            margin-top: -2100px;
+        }
+
+        33.33% {
+            margin-top: -2800px;
+        }
+
+        33.33% {
+            margin-top: -2800px;
+        }
+
+        41.66% {
+            margin-top: -3500px;
+        }
+
+        41.66% {
+            margin-top: -3500px;
+        }
+
+        50% {
+            margin-top: -4200px;
+        }
+
+        50% {
+            margin-top: -4200px;
+        }
+
+        58.33% {
+            margin-top: -4900px;
+        }
+
+        58.33% {
+            margin-top: -4900px;
+        }
+
+        66.66% {
+            margin-top: -5600px;
+        }
+
+        66.66% {
+            margin-top: -5600px;
+        }
+
+        75% {
+            margin-top: -6300px;
+        }
+
+        75% {
+            margin-top: -6300px;
+        }
+
+        83.33% {
+            margin-top: -7000px;
+        }
+
+        83.33% {
+            margin-top: -7000px;
+        }
+
+        91.65% {
+            margin-top: -7700px;
+        }
+
+        91.65% {
+            margin-top: -7700px;
+        }
+
+        100% {
+            margin-top: -8400px;
+        }
+
+        100% {
+            margin-top: -8400px;
+        }
+
+
+    }
+
+    .month {
+        width: 100%;
+        height: 700px;
+        background-color: yellow;
+        display: block;
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* overflow: hidden; */
+    }
+
+    .banner {
+        width: 100%;
+        height: 300px;
+        overflow: visible;
+
+
+    }
+
+    .apr .banner {
+        background-size: 100%;
+    }
+
+    .may .banner {
+        background-size: 120%;
+    }
+    .jun .banner {
+        background-size: 120%;
+    }
+    .jul .banner {
+        background-size: 170%;
+    }
+    .aug .banner {
+        background-size: 150%;
+    }
+    
+    .sep .banner {
+         background-size: 150%;
+    }
+    
+    .oct .banner {
+        background-size: 120%;
+    }
+    
+    .nov .banner {
+        background-size: 100%;
+        background-position: top;
+    }
+    
+    .dec .banner {
+        background-size: 150%;
+    }
+
+    .details {
+        width: 100%;
+        height: 400px;
+        /* overflow: visible; */
+        /* display: none; */
+        align-items: center;
+    }
+
+    .details p {
+
+        line-height: 30px;
+        font-size: 1.2rem;
+        /* height: 30px; */
+
+    }
+
+    .details-title {
+        /* width: 100%; */
+        /* height: 50px; */
+        /* grid-column: 1/-1; */
+        /* font-family: 'Lobster', cursive; */
+        background-color: transparent;
+        font-size: 2.5rem;
+        padding-top: 0px;
+        color: black;
+        text-shadow: -5px -0px 5px rgb(255, 255, 255), 0 5px 5px blue;
+
+
+    }
+
+    .weeks {
+        /* background-color: #7c678f; */
+        font-size: 1.0rem;
+        font-weight: bold;
+    }
+
+    .sunday {
+        background-color: transparent;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
