@@ -39,7 +39,7 @@
     overflow: hidden;
 
     animation: slider;
-    animation-delay: 5s;
+    animation-delay: 2s;
     animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-play-state: running;
@@ -121,7 +121,7 @@
         margin-top: -4950px;
     }
 
-    83.33% {
+    75% {
         margin-top: -4950px;
     }
 
@@ -129,8 +129,12 @@
         margin-top: -5500px;
     }
 
-    91.65% {
+    83.33% {
         margin-top: -5500px;
+    }
+
+    91.65% {
+        margin-top: -6050px;
     }
 
     91.65% {
