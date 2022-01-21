@@ -391,7 +391,7 @@
 .holiday_container {
   width: 60%;
   height: 100%;
-  background-color: crimson;
+  /* background-color: crimson; */
   justify-content: space-between;
 }
 
