@@ -437,7 +437,7 @@
   font-family: poppins;
   color: #FECF24;
   font-weight: bolder;
-  
+
 }
 
 .discount-right {
@@ -597,6 +597,7 @@
   height: 280px;
   /* background-color: yellowgreen; */
   overflow: hidden;
+  position: relative;
 }
 
 .bike-slider {
@@ -686,4 +687,257 @@
 
 .slider-img:nth-child(6) {
   background-image: url('../media/images/slider-1.jpg');
+}
+
+.dot_container {
+  width: 100%;
+  height: 20px;
+  /* background-color: gray; */
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  column-gap: 5px;
+  z-index: 5;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+
+  animation-delay: 0.2s;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+
+}
+
+.dot:nth-child(1) {
+  animation-name: dot1;
+}
+
+@keyframes dot1 {
+  5% {
+    background-color: white;
+  }
+
+  20% {
+    background-color: white;
+  }
+
+  25% {
+    background-color: white;
+  }
+
+  40% {
+    background-color: white;
+  }
+
+  45% {
+    background-color: white;
+  }
+
+  60% {
+    background-color: white;
+  }
+
+  65% {
+    background-color: white;
+  }
+
+  80% {
+    background-color: white;
+  }
+
+  85% {
+    background-color: #FF5300;
+  }
+
+  100% {
+    background-color: #FF5300;
+  }
+}
+.dot:nth-child(2) {
+  animation-name: dot2;
+}
+
+@keyframes dot2 {
+  5% {
+    background-color: #FF5300;
+  }
+
+  20% {
+    background-color: #FF5300;
+  }
+
+  25% {
+    background-color: white;
+  }
+
+  40% {
+    background-color: white;
+  }
+
+  45% {
+    background-color: white;
+  }
+
+  60% {
+    background-color: white;
+  }
+
+  65% {
+    background-color: white;
+  }
+
+  80% {
+    background-color: white;
+  }
+
+  85% {
+    background-color: white;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+.dot:nth-child(3) {
+  animation-name: dot3;
+}
+
+@keyframes dot3 {
+  5% {
+    background-color: white;
+  }
+
+  20% {
+    background-color: white;
+  }
+
+  25% {
+    background-color: #FF5300;
+  }
+
+  40% {
+    background-color: #FF5300;
+  }
+
+  45% {
+    background-color: white;
+  }
+
+  60% {
+    background-color: white;
+  }
+
+  65% {
+    background-color: white;
+  }
+
+  80% {
+    background-color: white;
+  }
+
+  85% {
+    background-color: white;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+.dot:nth-child(4) {
+  animation-name: dot4;
+}
+
+@keyframes dot4 {
+  5% {
+    background-color: white;
+  }
+
+  20% {
+    background-color: white;
+  }
+
+  25% {
+    background-color: white;
+  }
+
+  40% {
+    background-color: white;
+  }
+
+  45% {
+    background-color: #FF5300;
+  }
+
+  60% {
+    background-color: #FF5300;
+  }
+
+  65% {
+    background-color: white;
+  }
+
+  80% {
+    background-color: white;
+  }
+
+  85% {
+    background-color: white;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+.dot:nth-child(5) {
+  animation-name: dot5;
+}
+
+@keyframes dot5 {
+  5% {
+    background-color: white;
+  }
+
+  20% {
+    background-color: white;
+  }
+
+  25% {
+    background-color: white;
+  }
+
+  40% {
+    background-color: white;
+  }
+
+  45% {
+    background-color: white;
+  }
+
+  60% {
+    background-color: white;
+  }
+
+  65% {
+    background-color: #FF5300;
+  }
+
+  80% {
+    background-color: #FF5300;
+  }
+
+  85% {
+    background-color: white;
+  }
+
+  100% {
+    background-color: white;
+  }
 }
