@@ -608,7 +608,8 @@
   overflow: hidden;
 
   animation-name: bike-slider;
-  animation-duration: 20s;
+  animation-delay: 0.2s;
+  animation-duration: 25s;
   animation-iteration-count: infinite;
   animation-play-state: running;
 }
