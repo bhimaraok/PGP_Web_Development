@@ -422,7 +422,7 @@
   font-size: 3rem;
   font-weight: 600;
   /* background-color: yellow; */
-  margin-bottom: -70px;
+  margin-bottom: -50px;
 }
 
 .banner-discount {
@@ -432,11 +432,12 @@
 .discount-left {
   font-size: 12rem;
   letter-spacing: -5.88px;
-  margin-right: 30px;
-  margin-left: 10px;
-  font-family: cursive;
+  /* margin-right: 30px; */
+  /* margin-left: 10px; */
+  font-family: poppins;
   color: #FECF24;
-  font-weight: 900;
+  font-weight: bolder;
+  
 }
 
 .discount-right {
@@ -450,7 +451,7 @@
 
 .off-text {
   font-size: 2rem;
-  line-height: 2;
+  line-height: 1;
 }
 
 .holiday-banner-bottom {
