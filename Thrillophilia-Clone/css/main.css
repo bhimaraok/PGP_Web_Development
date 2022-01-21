@@ -380,7 +380,6 @@
 
 /* Holiday Section */
 
-
 .holiday_pack {
   /* background-color: burlywood; */
   width: 100%;
@@ -392,7 +391,7 @@
 .holiday_container {
   width: 60%;
   height: 100%;
-  /* background-color: crimson; */
+  background-color: crimson;
   justify-content: space-between;
 }
 
@@ -480,11 +479,11 @@
 
 
 .holiday_places {
-  width: 41%;
+  width: 42%;
   /* background-color: rgb(148, 147, 144); */
   text-align: center;
   display: grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 32% 32% 32%;
   grid-template-rows: repeat(11, 7.2%);
   gap: 2%;
 
