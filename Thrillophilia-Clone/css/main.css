@@ -614,7 +614,7 @@
 }
 
 @keyframes bike-slider {
-  20% {
+  10% {
     margin-left: -100%;
   }
 
@@ -622,7 +622,7 @@
     margin-left: -100%;
   }
 
-  40% {
+  30% {
     margin-left: -200%;
   }
 
@@ -630,7 +630,7 @@
     margin-left: -200%;
   }
 
-  60% {
+  50% {
     margin-left: -300%;
   }
 
@@ -638,7 +638,7 @@
     margin-left: -300%;
   }
 
-  80% {
+  70% {
     margin-left: -400%;
   }
 
@@ -646,7 +646,7 @@
     margin-left: -400%;
   }
 
-  100% {
+  90% {
     margin-left: -500%;
   }
 
