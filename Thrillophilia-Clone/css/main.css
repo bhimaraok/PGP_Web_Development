@@ -1,0 +1,698 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Header Section */
+
+.header_wrapper {
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header-container {
+  width: 60%;
+  height: 60px;
+  /* background-color: red; */
+  align-items: center;
+  border-bottom: 1px solid gray;
+  box-sizing: content-box;
+}
+
+.left {
+  width: 50%;
+  height: 60px;
+  /* background-color: green; */
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  width: 35%;
+  height: 35px;
+  margin-right: 10px;
+  background-image: url("../media/images/logos.png");
+  background-position: 0 -186px;
+}
+
+.search-logo {
+  margin-right: 5px;
+}
+
+.close-logo {
+  margin-left: 5px;
+}
+
+.top-search-input {
+  width: 60%;
+  height: 45px;
+  /* background-color: greenyellow; */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.top-serach-bar {
+  width: 360px;
+  height: 25px;
+  border: 0.5px solid gray;
+  margin: 0 5px;
+  border-radius: 10px;
+  background-color: transparent;
+  text-indent: 15px;
+  color: white;
+}
+
+.top-serach-bar::placeholder {
+  color: 3e3a3a;
+}
+
+.right {
+  width: 50%;
+  height: 60px;
+  /* background-color: yellow; */
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px;
+  color: white;
+}
+
+.nav-bar {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-bar li {
+  margin-right: 10px;
+  padding: 20px 0;
+}
+
+.nav-bar li:hover {
+  border-bottom: 2px solid #FF5300;
+}
+
+.nav-bar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.badge {
+  align-self: flex-start;
+  background-color: #FF5300;
+  color: white;
+  padding: 2px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.hamberger {
+  display: none;
+}
+
+/* Ends*/
+
+/* ------------------------------------------------------------------- */
+
+/* Banner Section */
+
+.banner-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../media/images//paradise--4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+}
+
+.banner-container {
+  width: 60%;
+  height: 300px;
+  /* border: 1px solid white; */
+  color: black;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.slider-container {
+  width: 100%;
+  height: 105px;
+  /* background-color: violet; */
+  text-align: center;
+
+  overflow: hidden;
+  line-height: 120px;
+  margin-bottom: 30px;
+}
+
+.slider {
+  width: 100%;
+  height: auto;
+
+  /* background-color: rosybrown; */
+
+  animation-name: banner-slider;
+  animation-delay: 2s;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.slider-ele {
+  width: 100%;
+  height: 105px;
+  line-height: 90px;
+  font-size: 6rem;
+}
+
+@keyframes banner-slider {
+  12.5% {
+    margin-top: -105px;
+  }
+
+  25% {
+    margin-top: -105px;
+  }
+
+  37.5% {
+    margin-top: -210px;
+  }
+
+  50% {
+    margin-top: -210px;
+  }
+
+  62.5% {
+    margin-top: -315px;
+  }
+
+  75% {
+    margin-top: -315px;
+  }
+
+  87.5% {
+    margin-top: -420px;
+  }
+
+  100% {
+    margin-top: -420px;
+  }
+}
+
+.filter {
+  width: 70%;
+  height: 50px;
+  /* background-color: white; */
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.filter-btn {
+  width: 25%;
+  height: 100%;
+  border: none;
+  background-color: #414647;
+  color: white;
+  border-right: 1px solid white;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+
+}
+
+.filter-btn:hover {
+  background-color: #FF5300
+}
+
+.filter-btn:last-child {
+  border-right: none;
+
+}
+
+.filter-btn:first-child {
+  background-color: #FF5300;
+
+}
+
+.banner-search-input {
+  width: 100%;
+  height: 20%;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+
+}
+
+.banner-search-input>input {
+  width: 95%;
+  border: none;
+  font-size: 1.2rem;
+  text-indent: 20px;
+}
+
+.banner-search-input>span {
+  width: 5%;
+  text-align: center;
+  color: black;
+
+}
+
+.bottom-intro {
+  width: 60%;
+  /* background-color: whitesmoke; */
+  position: absolute;
+  bottom: 0;
+  justify-content: space-between;
+  color: white;
+  padding-bottom: 50px;
+  font-size: 1.2rem;
+
+}
+
+.bottom-intro>div {
+  align-items: center;
+  padding: 5px;
+}
+
+.intro-logos {
+  font-size: 3rem;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+
+.intro-logos:hover {
+  opacity: 1;
+}
+
+/* Ends */
+/* ------------------------------------------------------------------- */
+/* Find The Perfect Escapes Section */
+
+.escapes {
+  width: 100%;
+  height: 355px;
+  /* background-color: cadetblue; */
+  margin: 45px 0;
+}
+
+.container {
+  width: 60%;
+  height: 355px;
+  /* background-color: coral; */
+  justify-content: space-between;
+  /* align-items: center; */
+
+}
+
+.escape_containt {
+  width: 35%;
+  height: 300px;
+  /* background-color: violet; */
+  flex-direction: column;
+
+}
+
+.escape_title {
+  font-size: 3rem;
+  font-weight: bold;
+  display: block;
+  height: 100px;
+  line-height: 50px;
+  position: relative;
+}
+
+.escape_title::before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 5px;
+  position: absolute;
+  bottom: -14px;
+  background-color: #FF5300;
+}
+
+.escape_caption {
+  display: block;
+  margin-top: 28px;
+  font-size: 1.3rem;
+
+  color: #A1BFEA;
+}
+
+.escape_images {
+  width: 65%;
+  gap: 5%;
+  /* background-color: yellow; */
+}
+
+.escape_image:nth-child(1) {
+  margin-right: 3px;
+}
+
+.escape_image {
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid white;
+  transition: all 0.5s;
+}
+
+.escape_image:hover {
+  transform: scale(1.02);
+}
+
+/* Holiday Section */
+
+
+
+
+
+
+
+
+
+
+.holiday_pack {
+  /* background-color: burlywood; */
+  width: 100%;
+  height: 588px;
+  margin: 45px 0;
+
+}
+
+.holiday_container {
+  width: 60%;
+  height: 100%;
+  /* background-color: crimson; */
+  justify-content: space-between;
+}
+
+.holiday_offer {
+  width: 57%;
+  background-image: url('../media/images/holiday-package.jpg');
+  border-radius: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2rem;
+
+}
+
+.holiday_banner_container {
+  width: 100%;
+  margin-left: 40px;
+  cursor: pointer;
+  flex-direction: column;
+  /* background-color: greenyellow; */
+}
+
+.banner-upto {
+  width: 100%;
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  /* background-color: yellow; */
+  margin-bottom: -70px;
+}
+
+.banner-discount {
+  justify-content: flex-start;
+}
+
+.discount-left {
+  font-size: 12rem;
+  letter-spacing: -5.88px;
+  margin-right: 30px;
+  margin-left: 10px;
+  font-family: cursive;
+  color: #FECF24;
+  font-weight: 900;
+
+
+}
+
+.discount-right {
+  font-size: 5rem;
+  font-weight: bolder;
+  line-height: 1;
+  padding-top: 90px;
+  color: #FECF24;
+
+}
+
+.off-text {
+  font-size: 2rem;
+  line-height: 2;
+}
+
+.holiday-banner-bottom {
+  font-size: 1.3rem;
+  line-height: 1.21;
+  letter-spacing: 5.5px;
+  color: white;
+  font-weight: 600;
+  margin-top: -30px;
+}
+
+.holiday-btn-book {
+  align-self: flex-end;
+  width: 30%;
+  padding: 5px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #FECF24;
+  border: none;
+  border-radius: 10px;
+  margin-right: 20px;
+  cursor: default;
+
+}
+
+
+
+.holiday_places {
+  width: 41%;
+  /* background-color: rgb(148, 147, 144); */
+  text-align: center;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: repeat(11, 7.2%);
+  gap: 2%;
+
+}
+
+.holiday_place {
+  /* background-color: yellow; */
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all 0.2s;
+
+}
+
+.holiday_place:hover {
+  transform: scale(1.02);
+}
+
+.holiday_place:hover .holiday_grid_title {
+  font-size: 1.2rem;
+  color: black;
+  text-shadow: 0 0 10px white;
+}
+
+
+.holiday_grid_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s;
+  font-size: 1rem;
+  color: white;
+}
+
+.holiday_gal_1 {
+  background-image: url('../media/images/gall-1.jpg');
+  grid-row: span 5;
+}
+
+.holiday_gal_2 {
+  background-image: url('../media/images/gall-2.jpg');
+  grid-row: span 3;
+
+}
+
+.holiday_gal_3 {
+  background-image: url('../media/images/gall-3.jpg');
+  grid-row: span 5;
+}
+
+.holiday_gal_4 {
+  background-image: url('../media/images/gall-4.jpg');
+  grid-row: span 5;
+}
+
+.holiday_gal_5 {
+  background-image: url('../media/images/gall-5.jpg');
+  grid-row: span 3;
+}
+
+.holiday_gal_6 {
+  background-image: url('../media/images/gall-6.jpg');
+  grid-row: span 5;
+}
+
+.holiday_gal_7 {
+  background-image: url('../media/images/gall-7.jpg');
+  grid-row: span 3;
+}
+
+.holiday_gal_8 {
+  background-image: url('../media/images/gall-8.jpg');
+  grid-row: span 3;
+}
+
+#holiday_btn {
+  width: 100%;
+  background-color: #FF5300;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  font-weight: bold;
+  transition: all 0.5s;
+
+}
+
+#holiday_btn:hover {
+  border: 3px solid #FF5300;
+  background-color: white;
+  color: black;
+  border-radius: 13px;
+
+}
+
+/* Slider Section */
+.ktm_bike_silder {
+  width: 100%;
+  height: 500px;
+  /* background-color: yellow; */
+  margin: 45px 0;
+}
+
+.bike-slider-container {
+  width: 60%;
+  height: 500px;
+  /* background-color: yellowgreen; */
+  overflow: hidden;
+}
+
+.bike-slider {
+  width: 600%;
+  height: 500px;
+  /* background-color: violet; */
+  display: flex;
+  /* flex-direction: column; */
+  overflow: hidden;
+
+  animation-name: bike-slider;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes bike-slider {
+  20% {
+    margin-left: -100%;
+  }
+
+  20% {
+    margin-left: -100%;
+  }
+
+  40% {
+    margin-left: -200%;
+  }
+
+  40% {
+    margin-left: -200%;
+  }
+
+  60% {
+    margin-left: -300%;
+  }
+
+  60% {
+    margin-left: -300%;
+  }
+
+  80% {
+    margin-left: -400%;
+  }
+
+  80% {
+    margin-left: -400%;
+  }
+
+  100% {
+    margin-left: -500%;
+  }
+
+  100% {
+    margin-left: -500%;
+  }
+}
+
+.slider-img {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border: 1px solid red; */
+}
+
+.slider-img:nth-child(1) {
+  background-image: url('../media/images/slider-1.jpg');
+}
+
+.slider-img:nth-child(2) {
+  background-image: url('../media/images/slider-2.jpg');
+}
+
+.slider-img:nth-child(3) {
+  background-image: url('../media/images/slider-3.jpg');
+}
+
+.slider-img:nth-child(4) {
+  background-image: url('../media/images/slider-4.jpg');
+}
+
+.slider-img:nth-child(5) {
+  background-image: url('../media/images/slider-5.jpg');
+}
+
+.slider-img:nth-child(6) {
+  background-image: url('../media/images/slider-1.jpg');
+}
