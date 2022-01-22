@@ -11,10 +11,16 @@
 
     <script>
         function functionleft() {
-            document.getElementById('exp_slider').style.marginLeft = '-180%';
+            document.getElementById('exp_slider').style.marginLeft = '0%';
         }
         function functionright() {
-            document.getElementById('exp_slider').style.marginLeft = '0%';
+            document.getElementById('exp_slider').style.marginLeft = '-180%';
+        }
+        function rajastanLeft() {
+            document.getElementById('raj_slider').style.marginLeft = '0%';
+        }
+        function rajastanRight() {
+            document.getElementById('raj_slider').style.marginLeft = '-180%';
         }
 
     </script>
@@ -179,7 +185,7 @@
         </div>
     </section>
     <!-- Customer Experiences  -->
-    <div class="customer_header_title">
+    <div class="cards_header_title">
         <div>Top Rated Experiences On <br>
             Thrillophilia</div>
     </div>
@@ -301,7 +307,216 @@
             </span>
         </div>
     </section>
-    
+
+    <!-- Rajastan Cities  -->
+    <div class="cards_header_title">
+        <div>Best Of Rajasthan</div>
+    </div>
+    <section class="cust_experiences flex-item">
+
+        <div class="left-arrow">
+            <span id="left-symbol" onclick="rajastanLeft()">
+                &#8592;
+            </span>
+        </div>
+
+        <div class="cust_experiences_container flex-item">
+            <div class="cust_exp_slider flex-item " id="raj_slider">
+                <!-- cust-card-1 -->
+                <div class="cust-card cust-card-1">
+                    <div class="cust-img raj-img-1">
+                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Jodhapur | 4D/3N</p>
+                    </div>
+                    <div class="cust-details flex-item">
+                        <p class="cust-detail-title">Jodhapur Jaisalmer Tour Package</p>
+                        <p><i class="fas fa-star star-icon"></i> 5.0(58 Reviews)</p>
+                        <p><span class="offer-price">&#8377;13,250</span> <span
+                                class="current-price">&#8377;17,850</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- cust-card-2 -->
+                <div class="cust-card cust-card-2">
+                    <div class="cust-img raj-img-2">
+                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Jaipur | 6D/5N</p>
+                    </div>
+                    <div class="cust-details">
+                        <p class="cust-detail-title">Jaipur Jodhapur Jaisalmer Tour Package</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0(124 Reviews)</p>
+                        <p><span class="offer-price">&#8377;20,115</span> <span
+                                class="current-price">&#8377;25,620</span></p>
+                    </div>
+
+                </div>
+                <!-- cust-card-3 -->
+                <div class="cust-card cust-card-3">
+                    <div class="cust-img raj-img-3">
+                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Udaipur |6D/5N</p>
+                    </div>
+                    <div class="cust-details">
+                        <p class="cust-detail-title">Udaipur Jodhapur Jaisalmer Tour Package</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (27 Reviews)</p>
+                        <p><span class="offer-price">&#8377;20,250</span> <span
+                                class="current-price">&#8377;24,450</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- cust-card-4 -->
+                <div class="cust-card cust-card-4">
+                    <div class="cust-img raj-img-4">
+                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Jaipur |2D/1N</p>
+                    </div>
+                    <div class="cust-details">
+                        <p class="cust-detail-title">Jaipur to Pushkar Luxury Weekend Tour</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (40 Reviews)</p>
+                        <p><span class="offer-price">&#8377;11,500</span> <span
+                                class="current-price">&#8377;16,450</span></p>
+                    </div>
+                </div>
+                <!-- cust-card-5 -->
+                <div class="cust-card cust-card-5">
+                    <div class="cust-img raj-img-5">
+                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Jaisalmer | 3D/2N</p>
+                    </div>
+                    <div class="cust-details">
+                        <p class="cust-detail-title">Padharo Jaisalmer Sightseeing Trip</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (79 Reviews)</p>
+                        <p><span class="offer-price">&#8377;9,187</span> <span
+                                class="current-price">&#8377;14,500</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- cust-card-6 -->
+                <div class="cust-card cust-card-6">
+                    <div class="cust-img raj-img-6">
+                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i>Jaipur | 6D/5N</p>
+                    </div>
+                    <div class="cust-details">
+                        <p class="cust-detail-title">Jaipur Udaipur Tour Package</p>
+                        <p><i class="fas fa-star star-icon"></i> 5.0 (95 Reviews) </p>
+                        <p><span class="offer-price">&#8377; 20,830</span> <span class="current-price">&#8377;
+                                25,840</span></p>
+                    </div>
+                </div>
+                <!-- cust-card-7 -->
+                <div class="cust-card cust-card-7">
+                    <div class="cust-img raj-img-7">
+                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i>Jaipur |7D/6N</p>
+                    </div>
+                    <div class="cust-details">
+                        <p class="cust-detail-title">Tri City Rajasthan Tour | Jaipur, Jodhpur</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (93 Reviews)</p>
+                        <p><span class="offer-price">&#8377;20,250</span> <span
+                                class="current-price">&#8377;29,700</span></p>
+                    </div>
+                </div>
+                <!-- cust-card-8 -->
+                <div class="cust-card cust-card-8">
+                    <div class="cust-img raj-img-8">
+                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Jaipur | 3D/2N</p>
+                    </div>
+                    <div class="cust-details">
+                        <p class="cust-detail-title">3 Days Luxury Puskhar Tour from Jaipur</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0(36 Reviews)</p>
+                        <p><span class="offer-price">&#8377;19,000</span> <span
+                                class="current-price">&#8377;22,100</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-arrow">
+            <span id="right-symbol" onclick="rajastanRight()">
+                &#8594;
+            </span>
+        </div>
+    </section>
+
+
+    <!-- Near Destinations -->
+
+    <section class="near_destinations flex-item">
+        <div class="destination_container flex-item">
+            <div class="destination-title">Destinations Near You</div>
+            <div class="destination-btns flex-item">
+                <button class="destination-btn">Bangalore</button>
+                <button class="destination-btn">Mubai</button>
+                <button class="destination-btn">Delhi</button>
+                <button class="destination-btn">Jaipur</button>
+                <button class="destination-btn">Pune</button>
+                <button class="destination-btn">Chandigarh</button>
+                <button class="destination-btn">Chennai</button>
+            </div>
+            <div class="destinations_cards flex-item">
+                <div class="destination-card flex-item">
+                    <div class="destination-card-img bng-img-1"></div>
+                    <div class="destination-card-details">
+                        <h3>Coorg</h3>
+                        <p>Start at &#8377;4,025</p>
+                    </div>
+                </div>
+                <div class="destination-card flex-item">
+                    <div class="destination-card-img bng-img-2">
+                    </div>
+                    <div class="destination-card-details">
+                        <h3>Chikmagaluru</h3>
+                        <p>Start at &#8377; 3,450</p>
+                    </div>
+                </div>
+                <div class="destination-card flex-item">
+                    <div class="destination-card-img bng-img-3">
+                    </div>
+                    <div class="destination-card-details">
+                        <h3>Wayanand</h3>
+                        <p>Start at &#8377; 4,025</p>
+                    </div>
+                </div>
+                <div class="destination-card flex-item">
+                    <div class="destination-card-img bng-img-4">
+                    </div>
+                    <div class="destination-card-details">
+                        <h3>Pondicherry</h3>
+                        <p>Start at &#8377; 7,415</p>
+                    </div>
+                </div>
+                <div class="destination-card flex-item">
+                    <div class="destination-card-img bng-img-5">
+                    </div>
+                    <div class="destination-card-details">
+                        <h3>Ooty</h3>
+                        <p>Start at &#8377; 6,750</p>
+                    </div>
+                </div>
+                <div class="destination-card flex-item">
+                    <div class="destination-card-img bng-img-6">
+                    </div>
+                    <div class="destination-card-details">
+                        <h3>Munnar</h3>
+                        <p>Start at &#8377; 200</p>
+                    </div>
+                </div>
+                <div class="destination-card flex-item">
+                    <div class="destination-card-img bng-img-7">
+                    </div>
+                    <div class="destination-card-details">
+                        <h3>Kabini</h3>
+                        <p>Start at &#8377; 500</p>
+                    </div>
+                </div>
+                <button class="destinations-btn">View All</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paradise On Earth -->
+
+
+    <!-- Latest Travel Trends -->
+
+
+    <!-- Gift an Experience -->
+
+    <!-- Our Partners -->
 
 </body>
 
