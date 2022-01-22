@@ -1,1137 +1,308 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins');
-/* font-family: 'Poppins', sans-serif; */
-
-* {
-  padding: 0;
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-}
-
-.flex-item {
-  display: flex;
-  justify-content: center;
-}
-
-
-/* Header Section */
-
-.header_wrapper {
-  width: 100%;
-  height: 60px;
-  background-color: transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 50;
-}
-
-.header-container {
-  width: 60%;
-  height: 60px;
-  /* background-color: red; */
-  align-items: center;
-  border-bottom: 1px solid gray;
-  box-sizing: content-box;
-}
-
-.left {
-  width: 50%;
-  height: 60px;
-  /* background-color: green; */
-  align-items: center;
-  color: white;
-}
-
-.logo {
-  width: 35%;
-  height: 35px;
-  margin-right: 10px;
-  background-image: url("../media/images/logos.png");
-  background-position: 0 -186px;
-}
-
-.search-logo {
-  margin-right: 5px;
-}
-
-.close-logo {
-  margin-left: 5px;
-}
-
-.top-search-input {
-  width: 60%;
-  height: 45px;
-  /* background-color: greenyellow; */
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.top-serach-bar {
-  width: 360px;
-  height: 25px;
-  border: 0.5px solid gray;
-  margin: 0 5px;
-  border-radius: 10px;
-  background-color: transparent;
-  text-indent: 15px;
-  color: white;
-}
-
-.top-serach-bar::placeholder {
-  color: 3e3a3a;
-}
-
-.right {
-  width: 50%;
-  height: 60px;
-  /* background-color: yellow; */
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0 10px;
-  color: white;
-}
-
-.nav-bar {
-  display: flex;
-  list-style-type: none;
-}
-
-.nav-bar li {
-  margin-right: 10px;
-  padding: 20px 0;
-}
-
-.nav-bar li:hover {
-  border-bottom: 2px solid #FF5300;
-}
-
-.nav-bar li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-}
-
-.badge {
-  align-self: flex-start;
-  background-color: #FF5300;
-  color: white;
-  padding: 2px;
-  margin-top: 10px;
-  margin-right: 5px;
-}
-
-.hamberger {
-  display: none;
-}
-
-/* Ends*/
-
-/* ------------------------------------------------------------------- */
-
-/* Banner Section */
-
-.banner-wrapper {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../media/images//paradise--4.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-
-}
-
-.banner-container {
-  width: 60%;
-  height: 300px;
-  /* border: 1px solid white; */
-  color: black;
-  flex-direction: column;
-  align-items: center;
-  font-size: 2rem;
-}
-
-.slider-container {
-  width: 100%;
-  height: 105px;
-  /* background-color: violet; */
-  text-align: center;
-
-  overflow: hidden;
-  line-height: 120px;
-  margin-bottom: 30px;
-}
-
-.slider {
-  width: 100%;
-  height: auto;
-
-  /* background-color: rosybrown; */
-
-  animation-name: banner-slider;
-  animation-delay: 2s;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-}
-
-.slider-ele {
-  width: 100%;
-  height: 105px;
-  line-height: 90px;
-  font-size: 6rem;
-}
-
-@keyframes banner-slider {
-  12.5% {
-    margin-top: -105px;
-  }
-
-  25% {
-    margin-top: -105px;
-  }
-
-  37.5% {
-    margin-top: -210px;
-  }
-
-  50% {
-    margin-top: -210px;
-  }
-
-  62.5% {
-    margin-top: -315px;
-  }
-
-  75% {
-    margin-top: -315px;
-  }
-
-  87.5% {
-    margin-top: -420px;
-  }
-
-  100% {
-    margin-top: -420px;
-  }
-}
-
-.filter {
-  width: 70%;
-  height: 50px;
-  /* background-color: white; */
-  border-radius: 9px;
-  overflow: hidden;
-}
-
-.filter-btn {
-  width: 25%;
-  height: 100%;
-  border: none;
-  background-color: #414647;
-  color: white;
-  border-right: 1px solid white;
-  font-size: 1.1rem;
-  transition: all 0.2s;
-
-}
-
-.filter-btn:hover {
-  background-color: #FF5300
-}
-
-.filter-btn:last-child {
-  border-right: none;
-
-}
-
-.filter-btn:first-child {
-  background-color: #FF5300;
-
-}
-
-.banner-search-input {
-  width: 100%;
-  height: 20%;
-  background-color: white;
-  border-radius: 15px;
-  overflow: hidden;
-
-}
-
-.banner-search-input>input {
-  width: 95%;
-  border: none;
-  font-size: 1.2rem;
-  text-indent: 20px;
-}
-
-.banner-search-input>span {
-  width: 5%;
-  text-align: center;
-  color: black;
-
-}
-
-.bottom-intro {
-  width: 60%;
-  /* background-color: whitesmoke; */
-  position: absolute;
-  bottom: 0;
-  justify-content: space-between;
-  color: white;
-  padding-bottom: 50px;
-  font-size: 1.2rem;
-
-}
-
-.bottom-intro>div {
-  align-items: center;
-  padding: 5px;
-}
-
-.intro-logos {
-  font-size: 3rem;
-  margin-right: 10px;
-  opacity: 0.5;
-  transition: all 0.2s;
-}
-
-.intro-logos:hover {
-  opacity: 1;
-}
-
-/* Ends */
-/* ------------------------------------------------------------------- */
-/* Find The Perfect Escapes Section */
-
-.escapes {
-  width: 100%;
-  height: 355px;
-  /* background-color: cadetblue; */
-  margin: 45px 0;
-}
-
-.container {
-  width: 60%;
-  height: 355px;
-  /* background-color: coral; */
-  justify-content: space-between;
-  /* align-items: center; */
-
-}
-
-.escape_containt {
-  width: 35%;
-  height: 300px;
-  /* background-color: violet; */
-  flex-direction: column;
-
-}
-
-.escape_title {
-  font-size: 3rem;
-  font-weight: bold;
-  display: block;
-  height: 100px;
-  line-height: 50px;
-  position: relative;
-}
-
-.escape_title::before {
-  content: "";
-  display: block;
-  width: 25%;
-  height: 5px;
-  position: absolute;
-  bottom: -14px;
-  background-color: #FF5300;
-}
-
-.escape_caption {
-  display: block;
-  margin-top: 28px;
-  font-size: 1.3rem;
-
-  color: #A1BFEA;
-}
-
-.escape_images {
-  width: 65%;
-  gap: 5%;
-  /* background-color: yellow; */
-}
-
-.escape_image:nth-child(1) {
-  margin-right: 3px;
-}
-
-.escape_image {
-  border-radius: 18px;
-  overflow: hidden;
-  border: 1px solid white;
-  transition: all 0.5s;
-}
-
-.escape_image:hover {
-  transform: scale(1.02);
-}
-
-/* Holiday Section */
-
-.holiday_pack {
-  /* background-color: burlywood; */
-  width: 100%;
-  height: 588px;
-  margin: 45px 0;
-
-}
-
-.holiday_container {
-  width: 60%;
-  height: 100%;
-  /* background-color: crimson; */
-  justify-content: space-between;
-}
-
-.holiday_offer {
-  width: 57%;
-  background-image: url('../media/images/holiday-package.jpg');
-  border-radius: 30px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 2rem;
-
-}
-
-.holiday_banner_container {
-  width: 100%;
-  margin-left: 40px;
-  cursor: pointer;
-  flex-direction: column;
-  /* background-color: greenyellow; */
-}
-
-.banner-upto {
-  width: 100%;
-  color: white;
-  font-size: 3rem;
-  font-weight: 600;
-  /* background-color: yellow; */
-  margin-bottom: -50px;
-}
-
-.banner-discount {
-  justify-content: flex-start;
-}
-
-.discount-left {
-  font-size: 12rem;
-  letter-spacing: -5.88px;
-  /* margin-right: 30px; */
-  /* margin-left: 10px; */
-  font-family: poppins;
-  color: #FECF24;
-  font-weight: bolder;
-
-}
-
-.discount-right {
-  font-size: 5rem;
-  font-weight: bolder;
-  line-height: 1;
-  padding-top: 90px;
-  color: #FECF24;
-
-}
-
-.off-text {
-  font-size: 2rem;
-  line-height: 1;
-}
-
-.holiday-banner-bottom {
-  font-size: 1.3rem;
-  line-height: 1.21;
-  letter-spacing: 5.5px;
-  color: white;
-  font-weight: 600;
-  margin-top: -30px;
-}
-
-.holiday-btn-book {
-  align-self: flex-end;
-  width: 30%;
-  padding: 5px 30px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  background-color: #FECF24;
-  border: none;
-  border-radius: 10px;
-  margin-right: 20px;
-  cursor: default;
-
-}
-
-
-
-.holiday_places {
-  width: 42%;
-  /* background-color: rgb(148, 147, 144); */
-  text-align: center;
-  display: grid;
-  grid-template-columns: 32% 32% 32%;
-  grid-template-rows: repeat(11, 7.2%);
-  gap: 2%;
-
-}
-
-.holiday_place {
-  /* background-color: yellow; */
-  width: 100%;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  border-radius: 8px;
-  transition: all 0.2s;
-
-}
-
-.holiday_place:hover {
-  transform: scale(1.02);
-}
-
-.holiday_place:hover .holiday_grid_title {
-  font-size: 1.2rem;
-  color: black;
-  text-shadow: 0 0 10px white;
-}
-
-
-.holiday_grid_title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.2s;
-  font-size: 1rem;
-  color: white;
-}
-
-.holiday_gal_1 {
-  background-image: url('../media/images/gall-1.jpg');
-  grid-row: span 5;
-}
-
-.holiday_gal_2 {
-  background-image: url('../media/images/gall-2.jpg');
-  grid-row: span 3;
-
-}
-
-.holiday_gal_3 {
-  background-image: url('../media/images/gall-3.jpg');
-  grid-row: span 5;
-}
-
-.holiday_gal_4 {
-  background-image: url('../media/images/gall-4.jpg');
-  grid-row: span 5;
-}
-
-.holiday_gal_5 {
-  background-image: url('../media/images/gall-5.jpg');
-  grid-row: span 3;
-}
-
-.holiday_gal_6 {
-  background-image: url('../media/images/gall-6.jpg');
-  grid-row: span 5;
-}
-
-.holiday_gal_7 {
-  background-image: url('../media/images/gall-7.jpg');
-  grid-row: span 3;
-}
-
-.holiday_gal_8 {
-  background-image: url('../media/images/gall-8.jpg');
-  grid-row: span 3;
-}
-
-#holiday_btn {
-  width: 100%;
-  background-color: #FF5300;
-  color: white;
-  font-size: 1.1rem;
-  border: none;
-  font-weight: bold;
-  transition: all 0.5s;
-
-}
-
-#holiday_btn:hover {
-  border: 3px solid #FF5300;
-  background-color: white;
-  color: black;
-  border-radius: 13px;
-
-}
-
-/* Slider Section */
-.ktm_bike_silder {
-  width: 100%;
-  height: 280px;
-  /* background-color: yellow; */
-  margin: 45px 0;
-}
-
-.bike-slider-container {
-  width: 60%;
-  height: 280px;
-  /* background-color: yellowgreen; */
-  overflow: hidden;
-  position: relative;
-  border-radius: 15px;
-}
-
-.bike-slider {
-  width: 600%;
-  height: 280px;
-  /* background-color: violet; */
-  display: flex;
-  /* flex-direction: column; */
-  overflow: hidden;
-
-  animation-name: bike-slider;
-  animation-delay: 0.2s;
-  animation-duration: 25s;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-}
-
-@keyframes bike-slider {
-  5% {
-    margin-left: -100%;
-  }
-
-  20% {
-    margin-left: -100%;
-  }
-
-  25% {
-    margin-left: -200%;
-  }
-
-  40% {
-    margin-left: -200%;
-  }
-
-  45% {
-    margin-left: -300%;
-  }
-
-  60% {
-    margin-left: -300%;
-  }
-
-  65% {
-    margin-left: -400%;
-  }
-
-  80% {
-    margin-left: -400%;
-  }
-
-  85% {
-    margin-left: -500%;
-  }
-
-  100% {
-    margin-left: -500%;
-  }
-}
-
-.slider-img {
-  width: 100%;
-  height: 280px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* border: 1px solid red; */
-}
-
-.slider-img:nth-child(1) {
-  background-image: url('../media/images/slider-1.jpg');
-}
-
-.slider-img:nth-child(2) {
-  background-image: url('../media/images/slider-2.jpg');
-}
-
-.slider-img:nth-child(3) {
-  background-image: url('../media/images/slider-3.jpg');
-}
-
-.slider-img:nth-child(4) {
-  background-image: url('../media/images/slider-4.jpg');
-}
-
-.slider-img:nth-child(5) {
-  background-image: url('../media/images/slider-5.jpg');
-}
-
-.slider-img:nth-child(6) {
-  background-image: url('../media/images/slider-1.jpg');
-}
-
-.dot_container {
-  width: 100%;
-  height: 20px;
-  /* background-color: gray; */
-  position: absolute;
-  bottom: 0;
-  align-items: center;
-  column-gap: 5px;
-  z-index: 5;
-}
-
-.dot {
-  width: 7px;
-  height: 7px;
-  background-color: white;
-  border-radius: 50%;
-
-  animation-delay: 0.2s;
-  animation-duration: 25s;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-
-}
-
-.dot:nth-child(1) {
-  animation-name: dot1;
-}
-
-@keyframes dot1 {
-  5% {
-    background-color: white;
-  }
-
-  20% {
-    background-color: white;
-  }
-
-  25% {
-    background-color: white;
-  }
-
-  40% {
-    background-color: white;
-  }
-
-  45% {
-    background-color: white;
-  }
-
-  60% {
-    background-color: white;
-  }
-
-  65% {
-    background-color: white;
-  }
-
-  80% {
-    background-color: white;
-  }
-
-  85% {
-    background-color: #FF5300;
-  }
-
-  100% {
-    background-color: #FF5300;
-  }
-}
-
-.dot:nth-child(2) {
-  animation-name: dot2;
-}
-
-@keyframes dot2 {
-  5% {
-    background-color: #FF5300;
-  }
-
-  20% {
-    background-color: #FF5300;
-  }
-
-  25% {
-    background-color: white;
-  }
-
-  40% {
-    background-color: white;
-  }
-
-  45% {
-    background-color: white;
-  }
-
-  60% {
-    background-color: white;
-  }
-
-  65% {
-    background-color: white;
-  }
-
-  80% {
-    background-color: white;
-  }
-
-  85% {
-    background-color: white;
-  }
-
-  100% {
-    background-color: white;
-  }
-}
-
-.dot:nth-child(3) {
-  animation-name: dot3;
-}
-
-@keyframes dot3 {
-  5% {
-    background-color: white;
-  }
-
-  20% {
-    background-color: white;
-  }
-
-  25% {
-    background-color: #FF5300;
-  }
-
-  40% {
-    background-color: #FF5300;
-  }
-
-  45% {
-    background-color: white;
-  }
-
-  60% {
-    background-color: white;
-  }
-
-  65% {
-    background-color: white;
-  }
-
-  80% {
-    background-color: white;
-  }
-
-  85% {
-    background-color: white;
-  }
-
-  100% {
-    background-color: white;
-  }
-}
-
-.dot:nth-child(4) {
-  animation-name: dot4;
-}
-
-@keyframes dot4 {
-  5% {
-    background-color: white;
-  }
-
-  20% {
-    background-color: white;
-  }
-
-  25% {
-    background-color: white;
-  }
-
-  40% {
-    background-color: white;
-  }
-
-  45% {
-    background-color: #FF5300;
-  }
-
-  60% {
-    background-color: #FF5300;
-  }
-
-  65% {
-    background-color: white;
-  }
-
-  80% {
-    background-color: white;
-  }
-
-  85% {
-    background-color: white;
-  }
-
-  100% {
-    background-color: white;
-  }
-}
-
-.dot:nth-child(5) {
-  animation-name: dot5;
-}
-
-@keyframes dot5 {
-  5% {
-    background-color: white;
-  }
-
-  20% {
-    background-color: white;
-  }
-
-  25% {
-    background-color: white;
-  }
-
-  40% {
-    background-color: white;
-  }
-
-  45% {
-    background-color: white;
-  }
-
-  60% {
-    background-color: white;
-  }
-
-  65% {
-    background-color: #FF5300;
-  }
-
-  80% {
-    background-color: #FF5300;
-  }
-
-  85% {
-    background-color: white;
-  }
-
-  100% {
-    background-color: white;
-  }
-}
-
-/* Customer Experiences */
-.left-arrow{
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  border: .5px solid gray;
-  z-index: 20;
-  position: relative;
-  top: 40%;
-  left: 30px;
-}
-#left-symbol{
-  color: #FF5300;
-  font-size: 3rem;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  
-}
-.right-arrow{
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  border: .5px solid gray;
-  z-index: 20;
-  position: relative;
-  top: 40%;
-  left: -30px;
-}
-#right-symbol{
-  color: #FF5300;
-  font-size: 3rem;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  
-}
-.customer_header_title {
-  text-align: center;
-  color: #3a3a3a;
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: 1px;
-  
-}
-.customer_header_title::after{
-content: "";
-width: 5%;
-height: 2px;
-background-color: #FF5300;
-position:absolute;
-left: 48%;
-margin-top: 10px;
-}
-
-.cust_experiences {
-  width: 100%;
-  height: 420px;
-  /* background-color: aqua; */
-  margin: 45px 0;
-  position: relative;
-}
-
-.cust_exp_slider{
-  width: 100%;
-  height: 420px;
-  /* background-color: yellow; */
-  justify-content: flex-start;
-  column-gap: 20px;
-  position: relative;
-  /* overflow: hidden; */
-}
-
-.cust_experiences_container {
-  width: 60%;
-  height: 420px;
-  /* background-color: rgb(94, 86, 86); */
-  position: relative;
-  overflow: hidden;
-
-}
-
-.cust-card {
-  width: 222px;
-  height: 420px;
-  /* background-color: cadetblue; */
-  /* overflow: hidden; */
-  transition: all 0.2s;
-
-}
-.cust-card:hover{
-  transform: scale(1.02);
-}
-
-.cust-img {
-  width: 222px;
-  height: 300px;
-  /* background-color: coral; */
-  border-radius: 20px;
-  margin-bottom: 10px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.cust-img-title{
-  position: absolute;
-  color: white;
-  font-size: 1.1rem;
-  bottom: 10px;
-  left: 7px;
-  font-weight: bold;
-}
-
-.cust-details {
-  width: 222px;
-  height: 110px;
-  /* background-color: darkcyan; */
-  /* font-size: 1.2rem; */
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 2px;
-}
-.cust-detail-title{
-  font-size: 1.1rem;
-  margin-bottom: 3px;
-  transition: all 0.2s;
-  }
-  .cust-detail-title:hover{
-    color: #FF5300;
-  }
-.star-icon{
-  color: #FECF24;
-}
-.offer-price{
-  font-size: 1.2rem;
-  font-weight: bold
-}
-.current-price{
-  color: gray;
-  
-  
-}
-.current-price::before{
-  content: "";
-  display: inline-block;
-  width: 60px;
-  height: .1%;
-  background-color: gray;
-  position: absolute;
-  margin-top: 17px;
-}
-
-.cust-img-1 {
-  background-image: url('../media/images/exp-1.jpg');
-}
-
-.cust-img-2 {
-  background-image: url('../media/images/exp-2.jpg');
-}
-
-.cust-img-3 {
-  background-image: url('../media/images/exp-3.jpg');
-}
-
-.cust-img-4 {
-  background-image: url('../media/images/exp-4.jpg');
-}
-
-.cust-img-5 {
-  background-image: url('../media/images/exp-5.jpg');
-}
-
-.cust-img-6 {
-  background-image: url('../media/images/exp-6.jpg');
-}
-
-.cust-img-7 {
-  background-image: url('../media/images/exp-7.jpg');
-}
-
-.cust-img-8 {
-  background-image: url('../media/images/exp-8.jpg');
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours, Activities, Adventures & Things to do | Thrillophilia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script>
+        function functionleft() {
+            document.getElementById('exp_slider').style.marginLeft = '-180%';
+        }
+        function functionright() {
+            document.getElementById('exp_slider').style.marginLeft = '0%';
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <!-- Top Header Section-->
+    <header class="header_wrapper flex-item">
+        <div class="header-container flex-item">
+            <div class="left flex-item">
+                <div class="logo">
+
+                </div>
+                <div class="top-search-input flex-item">
+                    <label for="input-search"><i class="fas fa-search search-logo"></i></label>
+                    <form action="#">
+                        <input type="text" placeholder="Search Destinations Tours, Activites" class="top-serach-bar"
+                            id="input-search">
+                    </form>
+                    <i class="fas fa-times close-logo"></i>
+                </div>
+
+            </div>
+            <div class="right flex-item">
+                <ul class="nav-bar">
+                    <span class="badge">New</span>
+                    <li><a href="#"><i class="fas fa-gift"></i> Gift an Experience</a></li>
+                    <li><a href="#">Login</a></li>
+
+                </ul>
+            </div>
+            <div class="hamberger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Banner Section-->
+    <section class="banner-wrapper flex-item">
+        <div class="banner-container flex-item">
+            <h1>It's time for new</h1>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slider-ele"> Experiences </div>
+                    <div class="slider-ele"> Adventures </div>
+                    <div class="slider-ele"> Escapes </div>
+                    <div class="slider-ele"> Thrills </div>
+                    <div class="slider-ele"> Experiences </div>
+                </div>
+            </div>
+            <div class="filter flex-item">
+                <button class="filter-btn"> <i class="fas fa-globe-asia"></i> All</button>
+                <button class="filter-btn"><i class="fas fa-skiing-nordic"></i> Activities</button>
+                <button class="filter-btn"> <i class="fas fa-hiking"></i> Tours</button>
+                <button class="filter-btn"><i class="fas fa-taxi"></i> Retnals</button>
+                <button class="filter-btn"><i class="fas fa-home"></i> Staycations</button>
+            </div>
+            <div class="banner-search-input flex-item">
+                <input type="text" placeholder="Search Destinations, Tours, Activities" id="bnr-search-input" />
+                <span>
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+        </div>
+        <div class="bottom-intro flex-item">
+            <div class="flex-item"><i class="fas fa-parachute-box intro-logos"></i> <span>24,000+ <br> TRAVEL
+                    EXPERIENCE</span></div>
+            <div class="flex-item"><i class="fas fa-globe-europe intro-logos"></i> <span>55+ <br> COUNTRIES</span></div>
+            <div class="flex-item"><i class="fas fa-hand-holding-usd intro-logos"></i> <span>Best Price <br>
+                    GUARANTEED</span></div>
+            <div class="flex-item"><i class="fas fa-users intro-logos"></i> <span>84 Million+ <br> USERS PER YEAR</span>
+            </div>
+        </div>
+    </section>
+    <!-- Escapes Section-->
+    <section class="escapes flex-item">
+        <div class="container flex-item">
+            <div class="escape_containt flex-item">
+                <span class="escape_title">
+                    Find The Perfect Escape
+                </span>
+                <span class="escape_caption">
+                    Discover your ideal Experience
+                </span>
+            </div>
+            <div class="escape_images flex-item">
+                <div class="escape_image"><img src="media/images/winter-escape.jpg" alt="Winter"></div>
+                <div class="escape_image"><img src="media/images/himalayan-winter.jpg" alt="Himalayn Winter"></div>
+                <div class="escape_image"><img src="media/images/luxury-resort.jpg" alt="Luxury Resort"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Holiday Pack -->
+    <section class="holiday_pack flex-item">
+        <div class="holiday_container flex-item">
+            <div class="holiday_offer flex-item">
+                <div class="holiday_banner_container flex-item">
+                    <div class="banner-upto">UPTO</div>
+                    <div class="banner-discount flex-item">
+                        <div class="discount-left">50</div>
+                        <div class="discount-right">
+                            <div class="percentage-sign">%</div>
+                            <div class="off-text">OFF</div>
+                        </div>
+
+                    </div>
+                    <div class="holiday-banner-bottom">
+                        <p>Holiday Packages</p>
+                    </div>
+                    <button class="holiday-btn-book">Book Now</button>
+                </div>
+            </div>
+            <div class="holiday_places">
+                <div class="holiday_place holiday_gal_1">
+                    <h2 class="holiday_grid_title">Rajastan</h2>
+                </div>
+                <div class="holiday_place holiday_gal_2">
+                    <h2 class="holiday_grid_title">Sikkim</h2>
+                </div>
+                <div class="holiday_place holiday_gal_3">
+                    <h2 class="holiday_grid_title">Himalayn Tracks</h2>
+                </div>
+                <div class="holiday_place holiday_gal_4">
+                    <h2 class="holiday_grid_title">Dubai</h2>
+                </div>
+                <div class="holiday_place holiday_gal_5 ">
+                    <h2 class="holiday_grid_title">Himachal Pradesh</h2>
+                </div>
+                <div class="holiday_place holiday_gal_6">
+                    <h2 class="holiday_grid_title">Srilanka</h2>
+                </div>
+                <div class="holiday_place holiday_gal_7">
+                    <h2 class="holiday_grid_title">Goa</h2>
+                </div>
+                <div class="holiday_place holiday_gal_8">
+                    <h2 class="holiday_grid_title">Maldives</h2>
+                </div>
+                <div class="holiday_place holiday_gal_9 flex-item">
+                    <button id="holiday_btn">View All</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bike Slider -->
+    <section class="ktm_bike_silder flex-item">
+        <div class="bike-slider-container">
+            <div class="bike-slider">
+                <div class="slider-img"></div>
+                <div class="slider-img"></div>
+                <div class="slider-img"></div>
+                <div class="slider-img"></div>
+                <div class="slider-img"></div>
+                <div class="slider-img"></div>
+            </div>
+            <div class="dot_container flex-item">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Customer Experiences  -->
+    <div class="customer_header_title">
+        <div>Top Rated Experiences On <br>
+            Thrillophilia</div>
+    </div>
+    <section class="cust_experiences flex-item">
+
+        <div class="left-arrow">
+            <span id="left-symbol" onclick="functionleft()">
+                &#8592;
+            </span>
+        </div>
+
+        <div class="cust_experiences_container flex-item">
+            <div class="cust_exp_slider flex-item " id="exp_slider">
+
+
+                <!-- cust-card-1 -->
+
+                <div class="cust-card cust-card-1">
+                    <div class="cust-img cust-img-1">
+                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Puskhar | 2D/1N</p>
+                    </div>
+                    <div class="cust-details flex-item">
+                        <p class="cust-detail-title">Secret Garden, Puskar By Barasinga Luxury</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (34 Reviews)</p>
+                        <p><span class="offer-price">&#8377;6,000</span> <span class="current-price">&#8377;8,600</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- cust-card-2 -->
+                <div class="cust-card cust-card-2">
+                    <div class="cust-img cust-img-2">
+                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Udaipur | 6D/5N</p>
+                    </div>
+                    <div class="cust-details">
+                        <p class="cust-detail-title">Sudaipur Jodhapur Jaisalmer Tour Package</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (27 Reviews)</p>
+                        <p><span class="offer-price">&#8377;20,250</span> <span
+                                class="current-price">&#8377;24,450</span></p>
+                    </div>
+
+                </div>
+                <!-- cust-card-3 -->
+                <div class="cust-card cust-card-3">
+                    <div class="cust-img cust-img-3">
+                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Dehradun | 6D/5N</p>
+                    </div>
+                    <div class="cust-details">
+                        <p class="cust-detail-title">Kedarkantha Trek, Uttarakhand</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (23 Reviews)</p>
+                        <p><span class="offer-price">&#8377;5,450</span> <span class="current-price">&#8377;8,950</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- cust-card-4 -->
+                <div class="cust-card cust-card-4">
+                    <div class="cust-img cust-img-4">
+                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Bentata | 5D/4N</p>
+                    </div>
+                    <div class="cust-details">
+                        <p class="cust-detail-title">5 Days Charming Sri Lanka Trour With Nuwara</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (57 Reviews)</p>
+                        <p><span class="offer-price">&#8377;27,500</span> <span
+                                class="current-price">&#8377;44,800</span></p>
+                    </div>
+                </div>
+                <!-- cust-card-5 -->
+                <div class="cust-card cust-card-5">
+                    <div class="cust-img cust-img-5">
+                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Kasol | 3D/2N</p>
+                    </div>
+                    <div class="cust-details">
+                        <p class="cust-detail-title">Kasol Trip and Trek to Kheerganga from Dheli</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (743 Reviews)</p>
+                        <p><span class="offer-price">&#8377;1,949</span> <span class="current-price">&#8377;2,500</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- cust-card-6 -->
+                <div class="cust-card cust-card-6">
+                    <div class="cust-img cust-img-6">
+                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Male | 5D/4N</p>
+                    </div>
+                    <div class="cust-details">
+                        <p class="cust-detail-title">Kandima Maldives Resort</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (26 Reviews)</p>
+                        <p><span class="offer-price">&#8377;220,000</span> <span
+                                class="current-price">&#8377;250,000</span></p>
+                    </div>
+                </div>
+                <!-- cust-card-7 -->
+                <div class="cust-card cust-card-7">
+                    <div class="cust-img cust-img-7">
+                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Gangtok | 5D/4N</p>
+                    </div>
+                    <div class="cust-details">
+                        <p class="cust-detail-title">Gangtok Darjeeling Private Tour Package</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (28 Reviews)</p>
+                        <p><span class="offer-price">&#8377;35,460</span> <span
+                                class="current-price">&#8377;47,280</span></p>
+                    </div>
+                </div>
+                <!-- cust-card-8 -->
+                <div class="cust-card cust-card-8">
+                    <div class="cust-img cust-img-8">
+                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Port Blair | 6D/5N</p>
+                    </div>
+                    <div class="cust-details">
+                        <p class="cust-detail-title">Secret Garden, Puskar By Barasinga Luxury</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (34 Reviews)</p>
+                        <p><span class="offer-price">&#8377;6,000</span> <span class="current-price">&#8377;8600</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-arrow">
+            <span id="right-symbol" onclick="functionright()">
+                &#8594;
+            </span>
+        </div>
+    </section>
+    
+
+</body>
+
+</html>
