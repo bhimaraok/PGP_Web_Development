@@ -1252,9 +1252,9 @@
 
 }
 
-.destination-card:hover {
-  box-shadow: 1px 1px 2px 2px gray;
-  transform: scale(1.05);
+.destination-card:not(:last-child):hover {
+  box-shadow: 0 4px 6px 0 rgb(0 0 0 / 20%);
+  transform: scale(1.02);
   border-radius: 10px;
 }
 
