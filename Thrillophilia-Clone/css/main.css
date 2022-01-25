@@ -1201,7 +1201,7 @@
   margin-bottom: 25px;
 }
 
-.destination-title::after{
+.destination-title::after {
   margin-top: 53px;
 }
 
@@ -1383,7 +1383,7 @@
   background-color: #ff5300;
   position: absolute;
 
- 
+
 }
 
 .paradise-list {
@@ -1407,72 +1407,74 @@
 
 /* Latest Travel Trends */
 
-
 .travel-trends-section-title::after {
   margin-top: 50px;
 }
 
-.travel-trends{
+.travel-trends {
   width: 100%;
   height: 500px;
-  /* background-color: royalblue; */
-  margin: 45px 0;
+ margin: 45px 0;
 }
 
-.travel-trends-container{
+.travel-trends-container {
   width: 60%;
   height: 500px;
-  /* background-color: salmon; */
 }
-.travel-trends-article{
+
+.travel-trends-article {
   width: 50%;
- height: 500px;
- position: relative;
-  /* background-color: seagreen; */
-  /* overflow: hidden; */
+  height: 500px;
+  position: relative;
 }
-.travel-trends-sub-article{
+
+.travel-trends-sub-article {
   width: 95%;
-  height: 21%;  
-  /* background-color: sienna; */
-  /* border: 1px solid black; */
+  height: 21%;
   margin: 12px 0;
   position: relative;
 }
 
-.sub-article-title{
+.sub-article-title {
   width: 60%;
 }
-.sub-article-title h4{
-transition: all 0.2s;
+
+.sub-article-title h4 {
+  transition: all 0.2s;
 }
-.sub-article-title h4:hover{
-color: #ff5300;
+
+.sub-article-title h4:hover {
+  color: #ff5300;
 }
-.sub-article-title p{
+
+.sub-article-title p {
   font-size: .8rem;
   margin-top: 10px;
 }
-.trends-img-container{
+
+.trends-img-container {
   width: 30%;
   /* height: 80%; */
   background-color: #FECF24;
   margin-right: 10px;
 }
-.trends-sub-article-img{
+
+.trends-sub-article-img {
   width: 100%;
   height: 100%;
   background-color: gray;
 
 }
-.trend-serch-article{
+
+.trend-serch-article {
   margin-left: 65%;
   color: #3a3a3a;
   font-size: 1rem;
   text-decoration: none;
 
 }
-.trend-serch-article:hover{
+
+.trend-serch-article:hover, .travel-trends-article-right>h2:hover {
   color: #ff5300;
 }
 
@@ -1480,11 +1482,14 @@ color: #ff5300;
   color: #ff5300;
 }
 
-
-
-
-.travel-trends-article-right{
+.travel-trends-article-right {
   width: 50%;
-  /* height: 500px; */
-  background-color: rgb(12, 63, 34);
+}
+
+.travel-trends-article-right>h2 {
+  margin: 10px 0;
+}
+
+.travel-trends-article-right>p {
+  line-height: 25px;
 }
