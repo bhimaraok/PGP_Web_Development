@@ -1009,6 +1009,14 @@
   position: absolute;
   left: 48%;
   margin-top: 10px;
+
+     /* content: "";
+  width: 5%;
+  height: 2px;
+  background-color: #FF5300;
+  position: absolute;
+  left: 48%;
+  margin-top: 10px; */
 }
 
 .cust_experiences {
@@ -1188,7 +1196,7 @@
   width: 100%;
   /* background-color: green; */
   margin-bottom: 45px;
-  }
+}
 
 .destination_container {
   width: 60%;
@@ -1206,6 +1214,10 @@
   font-weight: 700;
   line-height: 1.5;
   margin-bottom: 25px;
+}
+
+.destination-title::after{
+  margin-top: 53px;
 }
 
 .destination-btns {
@@ -1232,7 +1244,7 @@
   font-weight: 500;
 }
 
-.destinations_cards{
+.destinations_cards {
   width: 100%;
   /* background-color: red; */
   flex-wrap: wrap;
@@ -1252,14 +1264,16 @@
   padding: 5px;
   font-size: .8rem;
   transition: all 0.2s ease-in-out;
-  
+
 }
-.destination-card:hover{
+
+.destination-card:hover {
   box-shadow: 1px 1px 2px 2px gray;
   transform: scale(1.05);
   border-radius: 10px;
 }
-.destination-card-img{
+
+.destination-card-img {
   width: 50%;
   height: 100%;
   /* background-color: red; */
@@ -1269,30 +1283,38 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 7px;
-  
+
 }
-.bng-img-1{
+
+.bng-img-1 {
   background-image: url('../media/images/coorg.jpg');
 }
-.bng-img-2{
+
+.bng-img-2 {
   background-image: url('../media/images/chikkamagalur.jpg');
 }
-.bng-img-3{
+
+.bng-img-3 {
   background-image: url('../media/images/wayanand.jpg');
 }
-.bng-img-4{
+
+.bng-img-4 {
   background-image: url('../media/images/pandichery.jpg');
 }
-.bng-img-5{
+
+.bng-img-5 {
   background-image: url('../media/images/ooty.jpg');
 }
-.bng-img-6{
+
+.bng-img-6 {
   background-image: url('../media/images/munnar.jpg');
 }
-.bng-img-7{
+
+.bng-img-7 {
   background-image: url('../media/images/kabini.jpg');
 }
-.destinations-btn{
+
+.destinations-btn {
   width: 15%;
   height: 40px;
   margin-left: 6%;
@@ -1301,12 +1323,183 @@
   background-color: #ff5300;
   color: white;
   border-radius: 10px;
-  transition: all 0.2s ;
+  transition: all 0.2s;
 }
-.destinations-btn:hover{
+
+.destinations-btn:hover {
   background-color: white;
   color: #ff5300;
   border-color: #ff5300;
   cursor: pointer;
   font-weight: 500;
+}
+
+/* Paradise Section */
+
+.paradise {
+  width: 100%;
+  /* height: 460px; */
+  /* background-color: aquamarine; */
+  margin: 45px 0;
+}
+
+.paradise-section-title::after {
+  margin-top: 50px;
+  height: 3px;
+
+
+}
+
+.paradise_container {
+  width: 60%;
+  /* height: 460px; */
+  /* background-color: bisque; */
+  justify-content: flex-start;
+  gap: 2.7%;
+  overflow: hidden;
+
+}
+
+.paradise-card {
+  width: 23%;
+  height: auto;
+  /* background-color: cadetblue; */
+
+}
+
+.paradise-img {
+  width: 100%;
+  height: 200px;
+  background-color: chocolate;
+  overflow: hidden;
+}
+
+.paradise-card-img-3 {
+  width: 150%;
+  margin-top: -30px;
+  margin-left: -20px;
+}
+
+.paradise-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #3A3A3A;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.paradise-title::after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 2px;
+  margin-top: 5px;
+  background-color: #ff5300;
+  position: absolute;
+
+ 
+}
+
+.paradise-list {
+  /* background-color: yellow; */
+  min-height: 50px;
+  column-count: 2;
+  column-width: 50px;
+}
+
+.paradise-list a {
+  display: inline-block;
+  width: 100%;
+  color: #414647;
+  text-decoration: none;
+}
+
+.paradise-list a:hover {
+  color: #ff5300;
+}
+
+
+/* Latest Travel Trends */
+
+
+.travel-trends-section-title::after {
+  margin-top: 50px;
+}
+
+.travel-trends{
+  width: 100%;
+  height: 500px;
+  /* background-color: royalblue; */
+  margin: 45px 0;
+}
+
+.travel-trends-container{
+  width: 60%;
+  height: 500px;
+  /* background-color: salmon; */
+}
+.travel-trends-article{
+  width: 50%;
+ height: 500px;
+ position: relative;
+  /* background-color: seagreen; */
+  /* overflow: hidden; */
+}
+.travel-trends-sub-article{
+  width: 95%;
+  height: 21%;  
+  /* background-color: sienna; */
+  /* border: 1px solid black; */
+  margin: 12px 0;
+  position: relative;
+}
+
+.sub-article-title{
+  width: 60%;
+}
+.sub-article-title h4{
+transition: all 0.2s;
+}
+.sub-article-title h4:hover{
+color: #ff5300;
+}
+.sub-article-title p{
+  font-size: .8rem;
+  margin-top: 10px;
+}
+.trends-img-container{
+  width: 30%;
+  /* height: 80%; */
+  background-color: #FECF24;
+  margin-right: 10px;
+}
+.trends-sub-article-img{
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+
+}
+.trend-serch-article{
+  margin-left: 65%;
+  color: #3a3a3a;
+  font-size: 1rem;
+  text-decoration: none;
+
+}
+.trend-serch-article:hover{
+  color: #ff5300;
+}
+
+.trend-serch-article span {
+  color: #ff5300;
+}
+
+
+
+
+.travel-trends-article-right{
+  width: 50%;
+  /* height: 500px; */
+  background-color: rgb(12, 63, 34);
 }
