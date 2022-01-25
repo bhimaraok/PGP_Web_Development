@@ -1010,13 +1010,6 @@
   left: 48%;
   margin-top: 10px;
 
-     /* content: "";
-  width: 5%;
-  height: 2px;
-  background-color: #FF5300;
-  position: absolute;
-  left: 48%;
-  margin-top: 10px; */
 }
 
 .cust_experiences {
@@ -1111,18 +1104,9 @@
 
 .current-price {
   color: gray;
+  text-decoration: line-through;
 
 
-}
-
-.current-price::before {
-  content: "";
-  display: inline-block;
-  width: 60px;
-  height: .1%;
-  background-color: gray;
-  position: absolute;
-  margin-top: 17px;
 }
 
 .cust-img-1 {
