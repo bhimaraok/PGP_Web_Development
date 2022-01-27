@@ -8,49 +8,32 @@
     <title>Tours, Activities, Adventures & Things to do | Thrillophilia</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./css/main.css">
-
-    <script>
-        function functionleft() {
-            document.getElementById('exp_slider').style.marginLeft = '0%';
-        }
-        function functionright() {
-            document.getElementById('exp_slider').style.marginLeft = '-180%';
-        }
-        function rajastanLeft() {
-            document.getElementById('raj_slider').style.marginLeft = '0%';
-        }
-        function rajastanRight() {
-            document.getElementById('raj_slider').style.marginLeft = '-180%';
-        }
-
-    </script>
-
+    
 </head>
 
 <body>
     <!-- Top Header Section-->
-    <header class="header_wrapper flex-item">
-        <div class="header-container flex-item">
-            <div class="left flex-item">
-                <div class="logo">
+    <header class="header_wrapper flex-item" id="header-wrapper">
+        <div class="container flex-item">
+            <div class="left flex-item" id="left">
+                <div class="logo" id="top-logo">
 
                 </div>
                 <div class="top-search-input flex-item">
-                    <label for="input-search"><i class="fas fa-search search-logo"></i></label>
+                    <label for="top-input-search"><i class="fas fa-search search-logo"></i></label>
                     <form action="#">
                         <input type="text" placeholder="Search Destinations Tours, Activites" class="top-serach-bar"
-                            id="input-search">
+                            id="top-input-search">
                     </form>
                     <i class="fas fa-times close-logo"></i>
                 </div>
 
             </div>
-            <div class="right flex-item">
-                <ul class="nav-bar">
+            <div class="right flex-item" id="right">
+                <ul class="nav-bar" >
                     <span class="badge">New</span>
-                    <li><a href="#"><i class="fas fa-gift"></i> Gift an Experience</a></li>
-                    <li><a href="#">Login</a></li>
-
+                    <li ><a href="#" class="top-nav-link" id="nav-links1"><i class="fas fa-gift "></i> Gift an Experience</a></li>
+                    <li><a href="#" class="top-nav-link" id="nav-links2">Login</a></li>
                 </ul>
             </div>
             <div class="hamberger">
@@ -60,7 +43,7 @@
     </header>
     <!-- Banner Section-->
     <section class="banner-wrapper flex-item">
-        <div class="banner-container flex-item">
+        <div class="container banner-container flex-item">
             <h1>It's time for new</h1>
             <div class="slider-container">
                 <div class="slider">
@@ -85,7 +68,7 @@
                 </span>
             </div>
         </div>
-        <div class="bottom-intro flex-item">
+        <div class="bottom-intro container flex-item">
             <div class="flex-item"><i class="fas fa-parachute-box intro-logos"></i> <span>24,000+ <br> TRAVEL
                     EXPERIENCE</span></div>
             <div class="flex-item"><i class="fas fa-globe-europe intro-logos"></i> <span>55+ <br> COUNTRIES</span></div>
@@ -115,7 +98,7 @@
     </section>
     <!-- Holiday Pack -->
     <section class="holiday_pack flex-item">
-        <div class="holiday_container flex-item">
+        <div class="container flex-item">
             <div class="holiday_offer flex-item">
                 <div class="holiday_banner_container flex-item">
                     <div class="banner-upto">UPTO</div>
@@ -436,7 +419,7 @@
     <!-- Near Destinations -->
 
     <section class="near_destinations  flex-item">
-        <div class="destination_container flex-item">
+        <div class="container destination_container flex-item">
             <div class="destination-title cards_header_title">Destinations Near You</div>
             <div class="destination-btns flex-item">
                 <button class="destination-btn">Bangalore</button>
@@ -514,7 +497,7 @@
     </div>
     <section class="paradise flex-item">
 
-        <div class="paradise_container flex-item ">
+        <div class="container flex-item ">
             <div class="paradise-card ">
                 <div class="paradise-img">
                     <img class="paradise-card-img-1" src="./media/images/india.jpg" alt="India" />
@@ -610,7 +593,7 @@
         Latest Travel Trends
     </div>
     <section class="travel-trends flex-item">
-        <div class="travel-trends-container flex-item">
+        <div class="container flex-item">
             <div class="travel-trends-article">
                 <div class="travel-trends-sub-article flex-item">
                     <div class="trends-img-container">
@@ -682,8 +665,241 @@
 
     <!-- Gift an Experience -->
 
+    <section class="gift-exp-wrapper flex-item">
+        <div class="container flex-item">
+            <div class="gift-exp-img">
+                <img src="media/images/card-1.png" alt="Gift Cards">
+            </div>
+            <div class="gift-exp-details flex-item">
+                <div class="gift-exp-title">
+                    Gift an Experience
+                </div>
+                <div class="gift-exp-caption">
+                    With Thrillophilia Gift Cards
+                </div>
+                <button class="gift-exp-btn">
+                    Know More
+                </button>
+            </div>
+        </div>
+
+
+    </section>
+
     <!-- Our Partners -->
 
+    <section class="our-partner-wrapper flex-item">
+        <div class="container flex-item our-partner-container">
+            <div class="our-partner-title">Our Partners</div>
+            <div class="our-partner-caption">
+                <p>
+                    We team up with the best to give you an unmatchable experience
+                </p>
+            </div>
+            <div class="logos-group flex-item">
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-1.png" alt="logo-1">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-2.png" alt="logo-2">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-3.png" alt="logo-3">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-4.png" alt="logo-4">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-5.png" alt="logo-5">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-6.png" alt="logo-6">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-7.png" alt="logo-7">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-8.png" alt="logo-8">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-9.png" alt="logo-9">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-10.png" alt="logo-10">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-11.png" alt="logo-11">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-12.png" alt="logo-12">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-13.png" alt="logo-13">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-14.png" alt="logo-14">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-15.png" alt="logo-15">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-16.png" alt="logo-16">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-17.png" alt="logo-17">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-18.jpg" alt="logo-18">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-19.png" alt="logo-19">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-20.png" alt="logo-20">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-21.png" alt="logo-21">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-22.png" alt="logo-22">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-23.png" alt="logo-23">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-24.png" alt="logo-24">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-25.svg" alt="logo-25">
+                </div>
+                <div class="partner-logo">
+                    <img src="./media/images/logos/logo-26.png" alt="logo-26">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer-wrapper flex-item">
+        <div class="container footer-container">
+            <div class="travel-footer-destination">
+                <div class="footer-details-container flex-item">
+                    <div class="footer-about-secton">
+                        <h5>
+                            ABOUT THRILLOPHILIA
+                        </h5>
+                        <a href="#">ABOUT US</a>
+                        <a href="#">WE ARE HIRING</a>
+                        <a href="#">THRILLOPHILIA REVIEWS</a>
+                        <a href="#">TERMS & CONDITIONS</a>
+                        <a href="#">PRIVACY POLICIES</a>
+                        <a href="#">COPYRIGHT POLICIES</a>
+                        <a href="#">SUPPORT</a>
+                        <a href="#">APPS</a>
+                    </div>
+                    <div class="footer-about-secton">
+                        <h5>
+                            FOR SUPPLIERS
+                        </h5>
+                        <a href="#">LIST YOUR ACTIVITIES</a>
+                        <a href="#">FOR BRANDS</a>
+
+                        <h5>
+                            PARTNER WITH US
+                        </h5>
+                        <a href="#">DESTINATION MARKETING</a>
+
+                        <h5 href="#">FOR TRAVEL AGENTS</h5>
+                        <a href="#">SIGN UP AS A AGENT</a>
+                        <a href="#">AGENT LOGIN</a>
+
+
+                    </div>
+                    <div class="footer-about-secton">
+                        <h5>
+                            FOR TRAVELLERS
+                        </h5>
+                        <a href="#">GIFT AN EXPERIENCE</a>
+                    </div>
+                    <div class="footer-destination-img-holder flex-item">
+                        <h5>TRAVEL DESTINATIONS</h5>
+                        <div class="destitanion-img-holder">
+                            <span class="holiday_grid_title">
+                                BALI
+                            </span>
+                        </div>
+                        <div class="destitanion-img-holder">
+                            <span class="holiday_grid_title">
+                                DUBAI
+                            </span>
+                        </div>
+                        <div class="destitanion-img-holder">
+                            <span class="holiday_grid_title">
+                                SINGAPORE
+                            </span>
+                        </div>
+                        <div class="destitanion-img-holder">
+                            <span class="holiday_grid_title">
+                                THAILAND
+                            </span>
+                        </div>
+                        <div class="destitanion-img-holder">
+                            <span class="holiday_grid_title">
+                                ANDAMAN
+                            </span>
+                        </div>
+                        <div class="destitanion-img-holder">
+                            <span class="holiday_grid_title">
+                                INDIA
+                            </span>
+                        </div>
+                        <div class="destitanion-img-holder">
+                            <span class="holiday_grid_title">
+                                LADAKH
+                            </span>
+                        </div>
+                        <div class="destitanion-img-holder">
+                            <span class="holiday_grid_title">
+                                HONGKONG
+                            </span>
+                        </div>
+                        <div class="destitanion-img-holder">
+                            <span class="holiday_grid_title">
+                                SRILANKA
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-logo-containt">
+                <div class="footer-logo">
+                    <div class="footer-logo-img"></div>
+                </div>
+                <div class="social-links flex-item">
+                    <a href="#" class="footer-social-links"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="footer-social-links"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-social-links"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-social-links"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="footer-social-links"><i class="fab fa-youtube"></i></a>
+                </div>
+
+            </div>
+            <div class="footer-reserved">
+                <span class="footer-reserved-copy">
+                    &copy; 2022 Thrillophilia.com All rights reserved.
+                </span>
+                <p>
+                    The content and images used on this site are copyright protected and copyrights vests with the respective owners. The usage of the content and images on this website is intended to promote the works and no endorsement of the artist shall be implied. Unauthorized use is prohibited and punishable by law.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
