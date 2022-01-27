@@ -946,11 +946,12 @@
   height: 70px;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
-  border: .5px solid gray;
+  /* border: .5px solid gray; */
   z-index: 20;
   position: relative;
   top: 40%;
   left: -30px;
+  box-shadow: 0 3px 50px rgb(0 0 0 / 16%);
 }
 
 #right-symbol {
