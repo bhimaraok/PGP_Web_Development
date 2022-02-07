@@ -8,13 +8,14 @@
     <title>Tours, Activities, Adventures & Things to do | Thrillophilia</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./css/main.css">
-    
+    <link rel="stylesheet" href="./css/main_responsive.css">
+
 </head>
 
 <body>
     <!-- Top Header Section-->
     <header class="header_wrapper flex-item" id="header-wrapper">
-        <div class="container flex-item">
+        <div class="container flex-item header_container" id="header_container">
             <div class="left flex-item" id="left">
                 <div class="logo" id="top-logo">
 
@@ -30,9 +31,10 @@
 
             </div>
             <div class="right flex-item" id="right">
-                <ul class="nav-bar" >
+                <ul class="nav-bar">
                     <span class="badge">New</span>
-                    <li ><a href="#" class="top-nav-link" id="nav-links1"><i class="fas fa-gift "></i> Gift an Experience</a></li>
+                    <li><a href="#" class="top-nav-link" id="nav-links1"><i class="fas fa-gift "></i> Gift an
+                            Experience</a></li>
                     <li><a href="#" class="top-nav-link" id="nav-links2">Login</a></li>
                 </ul>
             </div>
@@ -80,7 +82,7 @@
     </section>
     <!-- Escapes Section-->
     <section class="escapes flex-item">
-        <div class="container flex-item">
+        <div class="container flex-item escape-container">
             <div class="escape_containt flex-item">
                 <span class="escape_title">
                     Find The Perfect Escape
@@ -149,7 +151,7 @@
     </section>
     <!-- Bike Slider -->
     <section class="ktm_bike_silder flex-item">
-        <div class="bike-slider-container">
+        <div class="container bike-slider-container">
             <div class="bike-slider">
                 <div class="slider-img"></div>
                 <div class="slider-img"></div>
@@ -168,253 +170,307 @@
         </div>
     </section>
     <!-- Customer Experiences  -->
+
     <div class="cards_header_title">
         <div>Top Rated Experiences On <br>
             Thrillophilia</div>
     </div>
-    <section class="cust_experiences flex-item">
+    <section class="card_wrapper flex-item">
 
-        <div class="left-arrow">
-            <span id="left-symbol" onclick="functionleft()">
+        <div class="left-arrow" id="prev">
+            <span id="left-symbol">
                 &#8592;
             </span>
         </div>
 
-        <div class="cust_experiences_container flex-item">
-            <div class="cust_exp_slider flex-item " id="exp_slider">
+        <div class="container carousel-container">
+            <div class="carousel flex-item " id="carousel">
 
-
-                <!-- cust-card-1 -->
-
-                <div class="cust-card cust-card-1">
-                    <div class="cust-img cust-img-1">
-                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Puskhar | 2D/1N</p>
+                <!-- Extra  -->
+                <!-- card-1 -->
+                <div class="card">
+                    <div class="card-img cust-img-1">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Puskhar | 2D/1N</p>
                     </div>
-                    <div class="cust-details flex-item">
-                        <p class="cust-detail-title">Secret Garden, Puskar By Barasinga Luxury</p>
+                    <div class="card-details flex-item">
+                        <p class="card-detail-title">Secret Garden, Puskar By Barasinga Luxury</p>
                         <p><i class="fas fa-star star-icon"></i> 4.0 (34 Reviews)</p>
-                        <p><span class="offer-price">&#8377;6,000</span> <span class="current-price">&#8377;8,600</span>
+                        <p>
+                            <span class="offer-price">&#8377;13,250</span>
+                            <span class="current-price">&#8377;17,850</span>
                         </p>
                     </div>
                 </div>
+
                 <!-- cust-card-2 -->
-                <div class="cust-card cust-card-2">
-                    <div class="cust-img cust-img-2">
-                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Udaipur | 6D/5N</p>
+                <div class="card">
+                    <div class="card-img cust-img-2">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Udaipur | 6D/5N</p>
                     </div>
-                    <div class="cust-details">
-                        <p class="cust-detail-title">Sudaipur Jodhapur Jaisalmer Tour Package</p>
+                    <div class="card-details">
+                        <p class="card-detail-title">Sudaipur Jodhapur Jaisalmer Tour Package</p>
                         <p><i class="fas fa-star star-icon"></i> 4.0 (27 Reviews)</p>
                         <p><span class="offer-price">&#8377;20,250</span> <span
                                 class="current-price">&#8377;24,450</span></p>
                     </div>
 
                 </div>
+
                 <!-- cust-card-3 -->
-                <div class="cust-card cust-card-3">
-                    <div class="cust-img cust-img-3">
-                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Dehradun | 6D/5N</p>
+                <div class="card">
+                    <div class="card-img cust-img-3">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Dehradun | 6D/5N</p>
                     </div>
-                    <div class="cust-details">
-                        <p class="cust-detail-title">Kedarkantha Trek, Uttarakhand</p>
+                    <div class="card-details">
+                        <p class="card-detail-title">Kedarkantha Trek, Uttarakhand</p>
                         <p><i class="fas fa-star star-icon"></i> 4.0 (23 Reviews)</p>
                         <p><span class="offer-price">&#8377;5,450</span> <span class="current-price">&#8377;8,950</span>
                         </p>
                     </div>
                 </div>
                 <!-- cust-card-4 -->
-                <div class="cust-card cust-card-4">
-                    <div class="cust-img cust-img-4">
-                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Bentata | 5D/4N</p>
+                <div class="card">
+                    <div class="card-img cust-img-4">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Bentata | 5D/4N</p>
                     </div>
                     <div class="cust-details">
-                        <p class="cust-detail-title">5 Days Charming Sri Lanka Trour With Nuwara</p>
+                        <p class="card-detail-title">5 Days Charming Sri Lanka Trour With Nuwara</p>
                         <p><i class="fas fa-star star-icon"></i> 4.0 (57 Reviews)</p>
                         <p><span class="offer-price">&#8377;27,500</span> <span
                                 class="current-price">&#8377;44,800</span></p>
                     </div>
                 </div>
                 <!-- cust-card-5 -->
-                <div class="cust-card cust-card-5">
-                    <div class="cust-img cust-img-5">
-                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Kasol | 3D/2N</p>
+                <div class="card">
+                    <div class="card-img cust-img-5">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Kasol | 3D/2N</p>
                     </div>
-                    <div class="cust-details">
-                        <p class="cust-detail-title">Kasol Trip and Trek to Kheerganga from Dheli</p>
+                    <div class="card-details">
+                        <p class="card-detail-title">Kasol Trip and Trek to Kheerganga from Dheli</p>
                         <p><i class="fas fa-star star-icon"></i> 4.0 (743 Reviews)</p>
                         <p><span class="offer-price">&#8377;1,949</span> <span class="current-price">&#8377;2,500</span>
                         </p>
                     </div>
                 </div>
                 <!-- cust-card-6 -->
-                <div class="cust-card cust-card-6">
-                    <div class="cust-img cust-img-6">
-                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Male | 5D/4N</p>
+                <div class="card">
+                    <div class="card-img cust-img-6">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Male | 5D/4N</p>
                     </div>
-                    <div class="cust-details">
-                        <p class="cust-detail-title">Kandima Maldives Resort</p>
+                    <div class="card-details">
+                        <p class="card-detail-title">Kandima Maldives Resort</p>
                         <p><i class="fas fa-star star-icon"></i> 4.0 (26 Reviews)</p>
                         <p><span class="offer-price">&#8377;220,000</span> <span
                                 class="current-price">&#8377;250,000</span></p>
                     </div>
                 </div>
                 <!-- cust-card-7 -->
-                <div class="cust-card cust-card-7">
-                    <div class="cust-img cust-img-7">
-                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Gangtok | 5D/4N</p>
+                <div class="card">
+                    <div class="card-img cust-img-7">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Gangtok | 5D/4N</p>
                     </div>
-                    <div class="cust-details">
-                        <p class="cust-detail-title">Gangtok Darjeeling Private Tour Package</p>
+                    <div class="card-details">
+                        <p class="card-detail-title">Gangtok Darjeeling Private Tour Package</p>
                         <p><i class="fas fa-star star-icon"></i> 4.0 (28 Reviews)</p>
                         <p><span class="offer-price">&#8377;35,460</span> <span
                                 class="current-price">&#8377;47,280</span></p>
                     </div>
                 </div>
                 <!-- cust-card-8 -->
-                <div class="cust-card cust-card-8">
-                    <div class="cust-img cust-img-8">
-                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Port Blair | 6D/5N</p>
+                <div class="card">
+                    <div class="card-img cust-img-8">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Port Blair | 6D/5N</p>
                     </div>
-                    <div class="cust-details">
-                        <p class="cust-detail-title">Secret Garden, Puskar By Barasinga Luxury</p>
+                    <div class="card-details">
+                        <p class="card-detail-title">Secret Garden, Puskar By Barasinga Luxury</p>
                         <p><i class="fas fa-star star-icon"></i> 4.0 (34 Reviews)</p>
                         <p><span class="offer-price">&#8377;6,000</span> <span class="current-price">&#8377;8600</span>
                         </p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="right-arrow">
-            <span id="right-symbol" onclick="functionright()">
-                &#8594;
-            </span>
-        </div>
-    </section>
 
-    <!-- Rajastan Cities  -->
-    <div class="cards_header_title">
-        <div>Best Of Rajasthan</div>
-    </div>
-    <section class="cust_experiences flex-item">
+                <!-- Extra end -->
 
-        <div class="left-arrow">
-            <span id="left-symbol" onclick="rajastanLeft()">
-                &#8592;
-            </span>
-        </div>
 
-        <div class="cust_experiences_container flex-item">
-            <div class="cust_exp_slider flex-item " id="raj_slider">
-                <!-- cust-card-1 -->
-                <div class="cust-card cust-card-1">
-                    <div class="cust-img raj-img-1">
-                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Jodhapur | 4D/3N</p>
+                 <!-- card-1 -->
+                 <div class="card">
+                    <div class="card-img cust-img-1">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Puskhar | 2D/1N</p>
                     </div>
-                    <div class="cust-details flex-item">
-                        <p class="cust-detail-title">Jodhapur Jaisalmer Tour Package</p>
-                        <p><i class="fas fa-star star-icon"></i> 5.0(58 Reviews)</p>
-                        <p><span class="offer-price">&#8377;13,250</span> <span
-                                class="current-price">&#8377;17,850</span>
+                    <div class="card-details flex-item">
+                        <p class="card-detail-title">Secret Garden, Puskar By Barasinga Luxury</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (34 Reviews)</p>
+                        <p>
+                            <span class="offer-price">&#8377;13,250</span>
+                            <span class="current-price">&#8377;17,850</span>
                         </p>
                     </div>
                 </div>
+
                 <!-- cust-card-2 -->
-                <div class="cust-card cust-card-2">
-                    <div class="cust-img raj-img-2">
-                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Jaipur | 6D/5N</p>
+                <div class="card">
+                    <div class="card-img cust-img-2">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Udaipur | 6D/5N</p>
                     </div>
-                    <div class="cust-details">
-                        <p class="cust-detail-title">Jaipur Jodhapur Jaisalmer Tour Package</p>
-                        <p><i class="fas fa-star star-icon"></i> 4.0(124 Reviews)</p>
-                        <p><span class="offer-price">&#8377;20,115</span> <span
-                                class="current-price">&#8377;25,620</span></p>
+                    <div class="card-details">
+                        <p class="card-detail-title">Sudaipur Jodhapur Jaisalmer Tour Package</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (27 Reviews)</p>
+                        <p><span class="offer-price">&#8377;20,250</span> <span
+                                class="current-price">&#8377;24,450</span></p>
                     </div>
 
                 </div>
+
                 <!-- cust-card-3 -->
-                <div class="cust-card cust-card-3">
-                    <div class="cust-img raj-img-3">
-                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Udaipur |6D/5N</p>
+                <div class="card">
+                    <div class="card-img cust-img-3">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Dehradun | 6D/5N</p>
                     </div>
-                    <div class="cust-details">
-                        <p class="cust-detail-title">Udaipur Jodhapur Jaisalmer Tour Package</p>
-                        <p><i class="fas fa-star star-icon"></i> 4.0 (27 Reviews)</p>
-                        <p><span class="offer-price">&#8377;20,250</span> <span
-                                class="current-price">&#8377;24,450</span>
+                    <div class="card-details">
+                        <p class="card-detail-title">Kedarkantha Trek, Uttarakhand</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (23 Reviews)</p>
+                        <p><span class="offer-price">&#8377;5,450</span> <span class="current-price">&#8377;8,950</span>
                         </p>
                     </div>
                 </div>
                 <!-- cust-card-4 -->
-                <div class="cust-card cust-card-4">
-                    <div class="cust-img raj-img-4">
-                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Jaipur |2D/1N</p>
+                <div class="card">
+                    <div class="card-img cust-img-4">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Bentata | 5D/4N</p>
                     </div>
                     <div class="cust-details">
-                        <p class="cust-detail-title">Jaipur to Pushkar Luxury Weekend Tour</p>
-                        <p><i class="fas fa-star star-icon"></i> 4.0 (40 Reviews)</p>
-                        <p><span class="offer-price">&#8377;11,500</span> <span
-                                class="current-price">&#8377;16,450</span></p>
+                        <p class="card-detail-title">5 Days Charming Sri Lanka Trour With Nuwara</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (57 Reviews)</p>
+                        <p><span class="offer-price">&#8377;27,500</span> <span
+                                class="current-price">&#8377;44,800</span></p>
                     </div>
                 </div>
                 <!-- cust-card-5 -->
-                <div class="cust-card cust-card-5">
-                    <div class="cust-img raj-img-5">
-                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Jaisalmer | 3D/2N</p>
+                <div class="card">
+                    <div class="card-img cust-img-5">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Kasol | 3D/2N</p>
                     </div>
-                    <div class="cust-details">
-                        <p class="cust-detail-title">Padharo Jaisalmer Sightseeing Trip</p>
-                        <p><i class="fas fa-star star-icon"></i> 4.0 (79 Reviews)</p>
-                        <p><span class="offer-price">&#8377;9,187</span> <span
-                                class="current-price">&#8377;14,500</span>
+                    <div class="card-details">
+                        <p class="card-detail-title">Kasol Trip and Trek to Kheerganga from Dheli</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (743 Reviews)</p>
+                        <p><span class="offer-price">&#8377;1,949</span> <span class="current-price">&#8377;2,500</span>
                         </p>
                     </div>
                 </div>
                 <!-- cust-card-6 -->
-                <div class="cust-card cust-card-6">
-                    <div class="cust-img raj-img-6">
-                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i>Jaipur | 6D/5N</p>
+                <div class="card">
+                    <div class="card-img cust-img-6">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Male | 5D/4N</p>
                     </div>
-                    <div class="cust-details">
-                        <p class="cust-detail-title">Jaipur Udaipur Tour Package</p>
-                        <p><i class="fas fa-star star-icon"></i> 5.0 (95 Reviews) </p>
-                        <p><span class="offer-price">&#8377; 20,830</span> <span class="current-price">&#8377;
-                                25,840</span></p>
+                    <div class="card-details">
+                        <p class="card-detail-title">Kandima Maldives Resort</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (26 Reviews)</p>
+                        <p><span class="offer-price">&#8377;220,000</span> <span
+                                class="current-price">&#8377;250,000</span></p>
                     </div>
                 </div>
                 <!-- cust-card-7 -->
-                <div class="cust-card cust-card-7">
-                    <div class="cust-img raj-img-7">
-                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i>Jaipur |7D/6N</p>
+                <div class="card">
+                    <div class="card-img cust-img-7">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Gangtok | 5D/4N</p>
                     </div>
-                    <div class="cust-details">
-                        <p class="cust-detail-title">Tri City Rajasthan Tour | Jaipur, Jodhpur</p>
-                        <p><i class="fas fa-star star-icon"></i> 4.0 (93 Reviews)</p>
-                        <p><span class="offer-price">&#8377;20,250</span> <span
-                                class="current-price">&#8377;29,700</span></p>
+                    <div class="card-details">
+                        <p class="card-detail-title">Gangtok Darjeeling Private Tour Package</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (28 Reviews)</p>
+                        <p><span class="offer-price">&#8377;35,460</span> <span
+                                class="current-price">&#8377;47,280</span></p>
                     </div>
                 </div>
                 <!-- cust-card-8 -->
-                <div class="cust-card cust-card-8">
-                    <div class="cust-img raj-img-8">
-                        <p class="cust-img-title"><i class="fas fa-map-marker-alt"></i> Jaipur | 3D/2N</p>
+                <div class="card">
+                    <div class="card-img cust-img-8">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Port Blair | 6D/5N</p>
                     </div>
-                    <div class="cust-details">
-                        <p class="cust-detail-title">3 Days Luxury Puskhar Tour from Jaipur</p>
-                        <p><i class="fas fa-star star-icon"></i> 4.0(36 Reviews)</p>
-                        <p><span class="offer-price">&#8377;19,000</span> <span
-                                class="current-price">&#8377;22,100</span>
+                    <div class="card-details">
+                        <p class="card-detail-title">Secret Garden, Puskar By Barasinga Luxury</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (34 Reviews)</p>
+                        <p><span class="offer-price">&#8377;6,000</span> <span class="current-price">&#8377;8600</span>
                         </p>
                     </div>
                 </div>
+
+                <!-- extra left img temp -->
+
+                 <!-- card-1 -->
+                 <div class="card">
+                    <div class="card-img cust-img-1">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Puskhar | 2D/1N</p>
+                    </div>
+                    <div class="card-details flex-item">
+                        <p class="card-detail-title">Secret Garden, Puskar By Barasinga Luxury</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (34 Reviews)</p>
+                        <p>
+                            <span class="offer-price">&#8377;13,250</span>
+                            <span class="current-price">&#8377;17,850</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- cust-card-2 -->
+                <div class="card">
+                    <div class="card-img cust-img-2">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Udaipur | 6D/5N</p>
+                    </div>
+                    <div class="card-details">
+                        <p class="card-detail-title">Sudaipur Jodhapur Jaisalmer Tour Package</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (27 Reviews)</p>
+                        <p><span class="offer-price">&#8377;20,250</span> <span
+                                class="current-price">&#8377;24,450</span></p>
+                    </div>
+
+                </div>
+
+                <!-- cust-card-3 -->
+                <div class="card">
+                    <div class="card-img cust-img-3">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Dehradun | 6D/5N</p>
+                    </div>
+                    <div class="card-details">
+                        <p class="card-detail-title">Kedarkantha Trek, Uttarakhand</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (23 Reviews)</p>
+                        <p><span class="offer-price">&#8377;5,450</span> <span class="current-price">&#8377;8,950</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- cust-card-4 -->
+                <div class="card">
+                    <div class="card-img cust-img-4">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Bentata | 5D/4N</p>
+                    </div>
+                    <div class="cust-details">
+                        <p class="card-detail-title">5 Days Charming Sri Lanka Trour With Nuwara</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (57 Reviews)</p>
+                        <p><span class="offer-price">&#8377;27,500</span> <span
+                                class="current-price">&#8377;44,800</span></p>
+                    </div>
+                </div>
+                <!-- cust-card-5 -->
+                <div class="card">
+                    <div class="card-img cust-img-5">
+                        <p class="card-img-title"><i class="fas fa-map-marker-alt"></i> Kasol | 3D/2N</p>
+                    </div>
+                    <div class="card-details">
+                        <p class="card-detail-title">Kasol Trip and Trek to Kheerganga from Dheli</p>
+                        <p><i class="fas fa-star star-icon"></i> 4.0 (743 Reviews)</p>
+                        <p><span class="offer-price">&#8377;1,949</span> <span class="current-price">&#8377;2,500</span>
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="right-arrow">
-            <span id="right-symbol" onclick="rajastanRight()">
+
+        <div class="right-arrow" id="next">
+            <span id="right-symbol">
                 &#8594;
             </span>
         </div>
     </section>
-
 
     <!-- Near Destinations -->
 
@@ -892,7 +948,10 @@
                     &copy; 2022 Thrillophilia.com All rights reserved.
                 </span>
                 <p>
-                    The content and images used on this site are copyright protected and copyrights vests with the respective owners. The usage of the content and images on this website is intended to promote the works and no endorsement of the artist shall be implied. Unauthorized use is prohibited and punishable by law.
+                    The content and images used on this site are copyright protected and copyrights vests with the
+                    respective owners. The usage of the content and images on this website is intended to promote the
+                    works and no endorsement of the artist shall be implied. Unauthorized use is prohibited and
+                    punishable by law.
                 </p>
             </div>
         </div>
