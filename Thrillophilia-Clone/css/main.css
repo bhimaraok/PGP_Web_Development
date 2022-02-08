@@ -43,6 +43,7 @@
   align-items: center;
   color: white;
   justify-content: flex-start;
+  /* border: 1px solid white; */
 }
 
 .logo {
@@ -55,34 +56,37 @@
   background-repeat: no-repeat;
   background-size: 100%;
   overflow: hidden;
-}
-
-.search-logo {
-  margin-right: 5px;
-  font-size: 1.5rem;
-}
-
-.close-logo {
-  margin-left: 5px;
-  font-size: 1.5rem;
+  /* border: 1px solid white; */
 }
 
 .top-search-input {
   width: 60%;
   height: 65px;
-  /* background-color: greenyellow; */
+  /* background-color: #adff2f; */
   justify-content: flex-start;
   align-items: center;
   overflow: hidden;
 }
+.search-logo {
+  margin-right: px;
+  font-size: 1.5rem;
+  /* border: 1px solid white; */
+}
+
+.close-logo {
+  margin-left: 5px;
+  font-size: 1.5rem;
+  /* border: 1px solid white; */
+ }
 
 .top-serach-bar {
-  width: 170%;
+  display: inline-block;
+  width: 100%;
   height: 4vh;
   border: 0.5px solid #3e3a3a38;
   margin: 0 15px;
   border-radius: 30px;
-  background-color: transparent;
+  /* background-color: goldenrod; */
   text-indent: 15px;
   color: white;
 }
@@ -1005,7 +1009,7 @@
 }
 
 .card-img {
-  height: 65%;
+  height: 63%;
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: saturation;
   position: relative;
@@ -1271,7 +1275,7 @@
 }
 
 .paradise-img {
-  width: 130%;
+  width: 135%;
   height: 250px;
   background-color: chocolate;
   overflow: hidden;
@@ -1418,8 +1422,8 @@
 
 .travel-trends-article-right > a {
   display: inline-block;
-  margin-top: 20px;
-  margin-left: 75%;
+  margin-top: 50px;
+  margin-left: 65%;
 }
 
 /* Ends*/
@@ -1742,8 +1746,8 @@
 }
 
 .footer-social-links {
-  background-color: #d88080f3;
-  color: #2e343d;
+  /* background-color: #e2d4d4f3; */
+  color: #fff;
   padding: 15px 15px;
   margin: 0 10px;
   width: 35px;
@@ -1755,9 +1759,6 @@
   transform: translate(-50%, -50%);
 }
 
-.footer-social-links:hover {
-  color: #fff;
-}
 
 .footer-reserved {
   color: #68798d;
