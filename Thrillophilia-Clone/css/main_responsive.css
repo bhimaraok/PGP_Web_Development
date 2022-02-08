@@ -1,43 +1,40 @@
-@media (min-width: 0px) and (max-width: 575.98px) {
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-}
-
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .container {
     width: 80%;
   }
+
   .logo {
     height: 30px;
     background-size: 120%;
 
   }
 
+  .top-search-input {
+    height: 55px;
+    justify-content: space-between;
+
+  }
+
   .top-serach-bar {
     height: 3vh;
-    width: 140%;
+    width: 120%;
   }
 
   .nav-bar li {
     margin-right: 15px;
     line-height: 45px;
   }
+
   .nav-bar li:hover {
     border-bottom: 2px solid #ff5300;
   }
+
   .nav-bar li a {
-    font-size: 1em;
+    font-size: .8em;
   }
 
   .badge {
-    font-size: 1em;
+    font-size: .8em;
   }
 
   /* Banner */
@@ -98,8 +95,12 @@
   }
 
   .bottom-intro {
-    font-size: 1em;
+    font-size: .8em;
   }
+  .intro-logos {
+    font-size: 2rem;
+  }
+
   /* Ends */
   /* ------------------------------------------------------------------- */
 
@@ -107,18 +108,23 @@
   .escapes {
     height: 200px;
   }
+
   .escape_title {
-    font-size: 3rem;
+    font-size: 5rem;
+    
   }
+
   .escape_images img {
     width: 100%;
   }
+
   /* Ends */
   /* ------------------------------------------------------------------- */
   /* Escape */
   .escape_title {
     font-size: 2em;
   }
+
   .escape_caption {
     font-size: 1.4em;
   }
@@ -132,17 +138,21 @@
   .banner-upto {
     font-size: 1.5em;
   }
+
   .discount-left {
     font-size: 6em;
   }
+
   .discount-right {
     font-size: 2em;
     padding-top: 50px;
   }
+
   .off-text {
     font-size: 0.5em;
     line-height: 1;
   }
+
   /* Ends*/
 
   /* ------------------------------------------------------------------- */
@@ -151,6 +161,7 @@
   .slider-img {
     height: 300px;
   }
+
   /* Ends*/
 
   /* ------------------------------------------------------------------- */
@@ -159,15 +170,19 @@
   .cards_header_title {
     font-size: 2em;
   }
+
   .card-detail-title {
-    font-size: 1.2em;}
+    font-size: 1em;
+  }
 
   .destination-btn {
     font-size: 1.1em;
   }
+
   .destination-card {
     font-size: 0.7em;
   }
+
   /* Ends*/
 
   /* ------------------------------------------------------------------- */
@@ -177,9 +192,11 @@
   .paradise-card {
     font-size: 0.8em;
   }
+
   .paradise-title {
     font-size: 1em;
   }
+
   /* Ends*/
 
   /* ------------------------------------------------------------------- */
@@ -188,24 +205,30 @@
   .travel-trends-article {
     height: 400px;
   }
+
   .sub-article-title {
-    font-size: 1.2em;
+    font-size: 1em;
   }
+
   .sub-article-title p {
     font-size: 0.7em;
   }
-  .travel-trends-article-right > h2 {
+
+  .travel-trends-article-right>h2 {
     margin: 10px 0;
     font-size: 1.5em;
   }
-  .travel-trends-article-right > p {
-    font-size: 1em;
+
+  .travel-trends-article-right>p {
+    font-size: .8em;
   }
+
   .trend-serch-article {
     margin-left: 65%;
     font-size: 1em;
   }
-  .travel-trends-article-right > a {
+
+  .travel-trends-article-right>a {
     margin-left: 65%;
   }
 
@@ -236,6 +259,7 @@
   .our-partner-title {
     font-size: 2em;
   }
+
   .our-partner-caption {
     font-size: 1.2em;
   }
@@ -245,52 +269,62 @@
   /* ------------------------------------------------------------------- */
 
   /* Footer Section */
+  .footer-wrapper {
+    height: 550px;
+  }
 
-  .footer-about-secton > h5 {
-   
+  .footer-about-secton>h5 {
+
     font-size: 1em;
   }
 
-  .footer-about-secton > a {
- 
+  .footer-about-secton>a {
+
     font-size: 0.7em;
-  
+
   }
+
   .destitanion-img-holder {
     height: 60px;
   }
-  .footer-destination-img-holder > h5 {
+
+  .footer-destination-img-holder>h5 {
     font-size: 1.2em;
   }
-  .destitanion-img-holder > span {
+
+  .destitanion-img-holder>span {
     font-size: .5em;
   }
 
-  .footer-logo{
+  .footer-logo {
     margin-left: 10%;
   }
 
   .footer-logo::before {
-       width: 150%;
-        margin-left: -180%;
-     } 
-    
-  .footer-logo::after {
-       width: 150%;
+    width: 150%;
+    margin-left: -180%;
   }
 
-  .footer-social-links{
+  .footer-logo::after {
+    width: 150%;
+  }
+
+  .footer-social-links {
     width: 25px;
     height: 25px;
   }
-  .footer-social-links:nth-child(1){
+
+  .footer-social-links:nth-child(1) {
     margin-left: 8%;
   }
+
   .footer-reserved-copy {
     font-size: 1em;
   }
+
   .footer-reserved {
-   
+
     font-size: .8em;
   }
+
 }
