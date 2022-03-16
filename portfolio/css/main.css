@@ -24,8 +24,8 @@ font-family: 'Ramaraja', serif;
   padding: 10px;
   font-size: 1.1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-radius: 0px 23px;
-  box-shadow: 6px 5px 5px #ac3636;
+  border-radius: 0px 23px 23px 0px;
+  box-shadow: 2px 2px 10px #000000;
   color: white;
   font-size: 1rem;
   font-weight: 400;
@@ -96,8 +96,8 @@ font-family: 'Ramaraja', serif;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 0px;
-  border: 1px solid rgb(38, 22, 22);
-  box-shadow: inset -5px -5px 3px rgb(71, 68, 68);
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: -5px -5px 3px rgb(71, 68, 68);
 }
 .img > img {
   width: 100%;
@@ -142,7 +142,7 @@ font-family: 'Ramaraja', serif;
 .about-containt {
   text-align: justify;
   text-indent: 50px;
-  font-size: 1.1rem;
+    font-size: 1.1rem;
   margin-bottom: 1.5%;
 }
 .about-containt > span {
@@ -204,6 +204,8 @@ font-family: 'Ramaraja', serif;
 }
 .project-desc {
   margin-bottom: 10px;
+  text-indent: 30px;
+  text-align: justify;
 }
 .project-btn {
   font-size: 18px;
@@ -213,6 +215,8 @@ font-family: 'Ramaraja', serif;
   background-color: #dfc4c4;
   color: black;
   transition: all 0.3s;
+  border-radius: 50px 50px 0px 0px ;
+  box-shadow: 0px 0px 5px red;
 }
 .project-btn:hover {
   background-color: #ac3636;
@@ -270,6 +274,10 @@ font-family: 'Ramaraja', serif;
   font-size: 18px;
   margin-top: 10px;
   transition: 0.9s;
+}
+.footer_btn:hover{
+  background-color: gray;
+  /* color: white; */
 }
 .footer_btn>a{
   color: black;
