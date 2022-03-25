@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousal Animations</title>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+<section class="carousal">
+
+    <ul class="slider" id="slider">
+        <li class="image"></li>
+        <li class="image"></li>
+        <li class="image"></li>
+        <li class="image"></li>
+        <li class="image"></li>
+        <li class="image"></li>
+    </ul>
+    <div class="buttons" >
+        <div class="button" onclick="prev()" id="prev">&lt;</div>
+        <div class="button" onclick="next()"id="next">&gt;</i>
+        </div>
+    </div>
+    <div class="indicators">
+        <span class="indicator" onclick="indicate(1)"></span>
+        <span class="indicator" onclick="indicate(2)"></span>
+        <span class="indicator" onclick="indicate(3)"></span>
+        <span class="indicator" onclick="indicate(4)"></span>
+
+    </div>
+
+
+</section>
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
