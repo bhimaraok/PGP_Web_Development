@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    height: 80vh;
+    background-image: url(../media/img/banner.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+.banner_title{
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+.top_banner_inp{
+   width: 70%;
+   padding: 10px;
+   margin-right: 5%;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+
+}
+
+.top_banner_inp:focus{
+    box-shadow: 0px 0px 5px black;
+}
+
+
+/* ************************************************************** */
+
+
+.card_img {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* background-color: royalblue; */
+}
+
+/* /////////////////////////////// */
+
+.maincards{
+    overflow: hidden;
+}
+
+.people_say_desc{
+    font-size:1.5em;
+
+}
+
+.people_img{
+    width: 50%;
+    clip-path: circle();
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+/* botterm Banner Section */
+
+.bottom_banner {
+    background-image: url(../media/img/banner.jpg);
+    background-position: bottom;
+
+}
+
+
+.bottem-inp {
+    width: 70%;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-right: 10px;
+}
+
+.bottem-inp:focus {
+    border: 2px solid black;
+}
+
+
+/* Footer Section */
+
+.social_links {
+    display: flex;
+    column-gap: 20px;
+    font-size: 30px;
+  
+}
+
+.footer_nav {
+    text-align: left;
+}
+
+.footer_nav>a {
+    padding-left: 25px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer_nav>p {
+    padding-left: 25px;
+    color: gray;
+}
